@@ -11,3 +11,5 @@ In this folder you will find a copy of the brainstorm document.
 
 You can track the discussion via the OpenChain SBOM Study Group mailing list:
 https://lists.openchainproject.org/g/sbom
+
+Illustration files referenced by `Cross-Industry-SBOM-Quality-Guide.md` are stored under `assets/images/sbom-document-quality-guide/` so that text changes and binary asset changes can be reviewed separately in GitHub.
