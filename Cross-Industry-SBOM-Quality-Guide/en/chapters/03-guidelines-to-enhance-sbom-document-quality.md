@@ -1,26 +1,26 @@
-# 3\. Guidelines to Enhance SBOM Document Quality {#3.-guidelines-to-enhance-sbom-document-quality}
+# 3. Guidelines to Enhance SBOM Document Quality
 
 Chapter 3 defines the criteria by which the OpenChain SBOM Document Quality Guide recognizes an SBOM Document as high-quality.
 
-## 3.1. Data Format {#3.1.-data-format}
+## 3.1. Data Format
 
 An SBOM Document SHALL be provided in a machine‑processable format that enables automated processing by organizations, customers, and regulatory or supervisory authorities.  
 The use of internationally recognized formats such as SPDX® or CycloneDX is therefore considered mandatory for such purposes.
 
-### 3.1.1 Verification and reference material {#3.1.1-verification-and-reference-material}
+### 3.1.1 Verification and reference material
 
 SPDX®: [https://spdx.dev/use/specifications/](https://spdx.dev/use/specifications/) , [https://tools.spdx.org/app/validate/](https://tools.spdx.org/app/validate/)   
 CycloneDX: [https://cyclonedx.org/specification/overview/](https://cyclonedx.org/specification/overview/) , [https://github.com/CycloneDX/sbom-utility](https://github.com/CycloneDX/sbom-utility) 
 
-### 3.1.2 Rationale {#3.1.2-rationale}
+### 3.1.2 Rationale
 
-To ensure simplified handling and streamlining of tooling and competences in the software supply chain, both for suppliers and consumers of software, SBOM Documents shall employ a format generally recognized as the standard specification for SBOMs as standardized. By harmonizing the use of this standard SBOM Data Format in an organization's external interfaces, the reduction in complexity leads to fewer errors and, as a result, improved the document quality.
+To ensure simplified handling and streamlining of tooling and competences in the software supply chain, both for suppliers and consumers of software, SBOM Documents shall employ a format generally recognized as the standard specification for SBOMs as standardized. By harmonizing the use of this standard SBOM Data Format in an organization's external interfaces, the reduction in complexity leads to fewer errors and, as a result, improves the document quality.
 
-## 3.2 Elements to be included {#3.2-elements-to-be-included}
+## 3.2 Elements to be included
 
 An SBOM Document SHALL include all elements defined in this chapter, which the OpenChain SBOM Document Quality Guide considers indicative of high quality.
 
-SBOMfdxs Document Information
+SBOM Document Information
 
 * Data Format Version  
   Include the SBOM Document format and version to ensure tool interoperability.  
@@ -78,7 +78,7 @@ When the SBOM document is used for legal or regulatory compliance purposes, the 
   Include all Elements that are mandatory for each specification and guideline to which each Entity conforms. If the appropriate value for any element is unknown, fill it in with a placeholder such as  'NOASSERTION' in SPDX document, indicating a 'known unknown'.  
   When a unified specification across the entire supply chain is not mandated, it is important to clearly indicate which specification the SBOM Document conforms to. This improves the document’s quality by explicitly defining the compliance requirements.
 
-### 3.2.1 Verification and reference material {#3.2.1-verification-and-reference-material}
+### 3.2.1 Verification and reference material
 
 The Minimum Elements For a Software Bill of Materials(SBOM) : [https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom](https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom)    
 2025 Minimum Elements for a Software Bill of Materials (SBOM): [https://www.cisa.gov/resources-tools/resources/2025-minimum-elements-software-bill-materials-sbom](https://www.cisa.gov/resources-tools/resources/2025-minimum-elements-software-bill-materials-sbom)   
@@ -87,15 +87,15 @@ CycloneDX: [https://cyclonedx.org/specification/overview/](https://cyclonedx.org
 SWHID: [https://www.swhid.org/](https://www.swhid.org/)   
 PURL: [https://github.com/package-url/purl-spec](https://github.com/package-url/purl-spec) 
 
-### 3.2.2 Rationale {#3.2.2-rationale}
+### 3.2.2 Rationale
 
 Clearly defining across the entire supply chain which elements, such as SBOM Document Creation information and Package information details, must be included and distributed helps prevent gaps in the distributed data. Furthermore, clarifying the expected values for each element reduces ambiguous language and inter-tool variations.
 
-## 3.3 File Format {#3.3-file-format}
+## 3.3 File Format
 
 An SBOM document SHALL be in a machine-processable format, such as those supported by SCA tools. In addition, to facilitate manual review (e.g., for license verification), the document SHOULD be provided in, or be easily convertible to, a human-readable format.
 
-### 3.3.1 Verification and reference material {#3.3.1-verification-and-reference-material}
+### 3.3.1 Verification and reference material
 
 XML 1.0: [https://www.w3.org/TR/xml/](https://www.w3.org/TR/xml/)  
 JSON-LD 1.1: [https://www.w3.org/TR/json-ld11/](https://www.w3.org/TR/json-ld11/)   
@@ -104,23 +104,23 @@ YAML™: [https://yaml.org/spec/](https://yaml.org/spec/)
 
 For other formats, please refer to the respective specifications.
 
-### 3.3.2 Rationale {#3.3.2-rationale}
+### 3.3.2 Rationale
 
 As noted in NTIA SBOM Minimum Elements, when SBOM Documents are exchanged across the supply chain, they must be provided in a machine-processable standard format to ensure interoperability among the various tools used by different entities. At the same time, since SBOM Documents may also be reviewed manually (for example, checking license information), it is equally important that the document is available in, or can be easily converted to, a human-readable format.
 
-## 3.4 Timing of SBOM Document delivery {#3.4-timing-of-sbom-document-delivery}
+## 3.4 Timing of SBOM Document delivery
 
 The SBOM Document SHALL be available no later than at the time of the delivery of the software (in either binary or source form).
 
-### 3.4.1 Verification and reference material {#3.4.1-verification-and-reference-material}
+### 3.4.1 Verification and reference material
 
 The Minimum Elements For a Software Bill of Materials(SBOM), “Distribution and Delivery”: [https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom](https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom) 
 
-### 3.4.2 Rationale {#3.4.2-rationale}
+### 3.4.2 Rationale
 
 An SBOM Document SHOULD be available no later than at the delivery of the software to ensure that the receiving entity can ingest the software and its SBOM.
 
-## 3.5 SBOM Document Scope {#3.5-sbom-document-scope}
+## 3.5 SBOM Document Scope
 
 The SBOM SHALL contain all open source software that is delivered with the product. The SBOM SHOULD contain all commercial components.  
 If some components are either not included or ambiguous, they SHALL be reported as “Known Unknowns”. When reporting “Known Unknowns”, the SBOM Document SHOULD distinguish between two categories:
@@ -131,35 +131,35 @@ If some components are either not included or ambiguous, they SHALL be reported 
 Clearly labeling the reason for omission helps downstream recipients assess risk accurately and take appropriate action.  
 Refer to the “[5.6 Clarifying the Scope of Descriptions and Defining Accountability](05-common-sbom-document-quality-issues-and-improvement-measures.md#5.6-clarifying-the-scope-of-descriptions-and-defining-accountability)” for more details.
 
-### 3.5.1 Verification and reference material {#3.5.1-verification-and-reference-material}
+### 3.5.1 Verification and reference material
 
 The Minimum Elements For a Software Bill of Materials(SBOM), “Known Unknowns”: [https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom](https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom)
 
-### 3.5.2 Rationale {#3.5.2-rationale}
+### 3.5.2 Rationale
 
 It might not be possible, advisable or feasible to have the commercial component information in the SBOM Document. However, the SBOM Document should convey as complete information as possible.
 
-## 3.6 SBOM Document Verification {#3.6-sbom-document-verification}
+## 3.6 SBOM Document Verification
 
 A digital signature of the SBOM Document SHOULD be provided in order to guarantee its integrity.
 
-### 3.6.1 Verification and reference material {#3.6.1-verification-and-reference-material}
+### 3.6.1 Verification and reference material
 
 Sigstore: [https://www.sigstore.dev/](https://www.sigstore.dev/)
 
-### 3.6.2 Rationale {#3.6.2-rationale}
+### 3.6.2 Rationale
 
 While the need to attach a digital signature to the SBOM Document for ensuring its integrity is currently under discussion, few practical implementations exist. Consequently, this topic  will be revisited in the future, taking into account the associated costs and practical considerations.
 
-## 3.7 SBOM Document Confidentiality {#3.7-sbom-document-confidentiality}
+## 3.7 SBOM Document Confidentiality
 
 Contents of the SBOM Document may be subject to confidentiality agreements. Appropriate access controls SHOULD be implemented as necessary. However, confidentiality agreements and access controls SHALL NOT prevent a recipient from redistributing the SBOM Document along with the applicable software components. Use of the Traffic Light Protocol (TLP) as implemented by CycloneDX 1.7 is a sensible approach for managing this need.
 
-### 3.7.1 Verification and reference material {#3.7.1-verification-and-reference-material}
+### 3.7.1 Verification and reference material
 
 The Minimum Elements For a Software Bill of Materials(SBOM), “Access Control”: [https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom](https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom)
 
-### 3.7.2 Rationale {#3.7.2-rationale}
+### 3.7.2 Rationale
 
 Information related to proprietary software may be subject to confidentiality agreements and thus cannot always be public. In such cases, it is acceptable either to restrict access solely to authorized entities within the supply chain or to substitute the information with "Known Unknowns."  
 However, when these components are distributed through complex supply chains, confidentiality agreements and access controls SHALL NOT restrict SBOM Document redistribution, thereby preventing the loss of critical information during the distribution.

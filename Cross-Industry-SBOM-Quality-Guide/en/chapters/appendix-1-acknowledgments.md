@@ -1,4 +1,4 @@
-## Appendix.1 Acknowledgments {#appendix.1-acknowledgments}
+## Appendix.1 Acknowledgments
 
 This list acknowledges those who have provided edits, feedback, and comments. The names are arranged in alphabetical order.  
 We extend our sincere gratitude to all contributors for their generous time, thoughtful insights, and continued dedication to improving this document.

@@ -1,8 +1,8 @@
-# 6\. Compliance Elements for SPDX and CycloneDX in Relation to Legislation and Guidelines {#6.-compliance-elements-for-spdx-and-cyclonedx-in-relation-to-legislation-and-guidelines}
+# 6. Compliance Elements for SPDX and CycloneDX in Relation to Legislation and Guidelines
 
 This chapter provides a comprehensive analysis of the compliance elements associated with various guidelines within the frameworks of SPDX and CycloneDX. It is organized into sections that detail each guideline's requirements, categorizing them as mandatory or recommended. For each guideline, the chapter outlines the key elements, including their names, associated data fields, and supplementary remarks. Emphasis is placed on establishing a clear mapping between the guideline elements and the corresponding data fields defined in SPDX and CycloneDX. This structured approach facilitates cross-referencing and ensures consistency in documenting compliance requirements across multiple frameworks.
 
-## 6.1 References {#6.1-references}
+## 6.1 References
 
 * SPDX v2.2+  
   [https://spdx.github.io/spdx-spec/v2.3/how-to-use/\#k2-satisfying-ntia-minimum-elements-for-an-sbom-using-spdx](https://spdx.github.io/spdx-spec/v2.3/how-to-use/#k2-satisfying-ntia-minimum-elements-for-an-sbom-using-spdx)  
@@ -20,9 +20,8 @@ This chapter provides a comprehensive analysis of the compliance elements associ
 * OpenChain Telco SBOM Guide Version 1.1  
   [https://github.com/OpenChain-Project/Telco-WG/blob/main/OpenChain-Telco-SBOM-Guide\_EN.md](https://github.com/OpenChain-Project/Telco-WG/blob/main/OpenChain-Telco-SBOM-Guide_EN.md)
 
-## 
 
-## 6.2 Cross-Regulation Comparison Table {#heading}
+## 6.2 Cross-Regulation Comparison Table
 
 This table consolidates all element requirements from the four standards covered in this chapter. It enables implementers to identify which elements satisfy multiple regulations simultaneously and to design a single SBOM that meets all applicable obligations.
 
@@ -51,13 +50,11 @@ This table consolidates all element requirements from the four standards covered
 | **Relationship Information** | **Dependency Relationship** | **SHALL** | **SHALL** | **SHALL** | **SHALL** | All standards require this. NTIA/CISA: document must DESCRIBE at least one package and record CONTAINS relationships. BSI specifically requires 'contains' or 'dependsOn' relationship types. See Section 5.7 for guidance on unified relationship expressions. |
 |   | **Other Component Relationships** | ***SHOULD*** | — | ***SHOULD*** | — | NTIA recommends recording additional relationships such as GENERATES, ANCESTOR\_OF, and VARIANT\_OF. CISA and Telco do not address these. See Section 5.7 for recommended keywords. |
 
-##  {#heading}
 
-## 
 
-## 6.3 NTIA \- The Minimum Elements For a Software Bill of Materials (SBOM) {#6.3-ntia---the-minimum-elements-for-a-software-bill-of-materials-%28sbom%29}
+## 6.3 NTIA - The Minimum Elements For a Software Bill of Materials (SBOM)
 
-### 6.3.1 Required Elements {#6.3.1-required-elements}
+### 6.3.1 Required Elements
 
 | Req. | Element Name | SPDX v2.2+ | SPDX v3.0 | CycloneDX v1.7 |
 | ----- | :---- | :---- | :---- | :---- |
@@ -76,11 +73,10 @@ This table consolidates all element requirements from the four standards covered
 | ***SHOULD*** | **License Information** | (7.13)PackageLicenseConcluded
 (7.15)PackageLicenseDeclared | RelationshipType::hasConcludedLicense RelationshipType::hasDeclaredLicense | bom.components\[\].licenses\[\] |
 
-### 
 
-## 6.4 CISA \- 2025 Minimum Elements for a Software Bill of Materials (SBOM) {#6.4-cisa---2025-minimum-elements-for-a-software-bill-of-materials-%28sbom%29}
+## 6.4 CISA - 2025 Minimum Elements for a Software Bill of Materials (SBOM)
 
-### 6.4.1 Required Elements {#6.4.1-required-elements}
+### 6.4.1 Required Elements
 
 | Req. | Element Name | SPDX v2.2+ | SPDX v3.0 | CycloneDX v1.7 |
 | ----- | :---- | :---- | :---- | :---- |
@@ -99,7 +95,7 @@ This table consolidates all element requirements from the four standards covered
 | **SHALL** | **Timestamp** | (6.9) Created | Core/Classes/CreationInfo.created | bom.metadata.timestamp |
 | **SHALL** | **Generation Context** | (6.9) Created → model-definition | Software/Sbom/sbomType (via model-definition) | bom.metadata.lifecycles\[\] |
 
-### 6.4.2 Table of Minimum Elements Data Fields {#6.4.2-table-of-minimum-elements-data-fields}
+### 6.4.2 Table of Minimum Elements Data Fields
 
 | Data Field | Description |
 | :---- | :---- |
@@ -115,9 +111,9 @@ This table consolidates all element requirements from the four standards covered
 | **Timestamp** | Record of the date and time of the most recent update to the SBOM data. |
 | **Generation Context** | The relative software lifecycle phase and data available at the time the Software Producer generated the SBOM (before build, during build, after build). |
 
-## 6.5 BSI TR-03183 Cyber Resilience Requirements for  Manufacturers and Products Part 2: Software Bill of Materials (SBOM) Version 2.1.0 {#6.5-bsi-tr-03183-cyber-resilience-requirements-for-manufacturers-and-products-part-2:-software-bill-of-materials-%28sbom%29-version-2.1.0}
+## 6.5 BSI TR-03183 Cyber Resilience Requirements for  Manufacturers and Products Part 2: Software Bill of Materials (SBOM) Version 2.1.0
 
-### 6.5.1 Required Elements {#6.5.1-required-elements}
+### 6.5.1 Required Elements
 
 TR-03182 version 2.1.0 does not allow SPDX v2.
 
@@ -144,15 +140,14 @@ TR-03182 version 2.1.0 does not allow SPDX v2.
 | *MAY* | **Hash value of source code** | Software/Classes/SoftwareArtifact.verifiedUsing \+ Relationship (generates) | bom.components.externalReferences\[\].hashes\[\]  \[type=source-distribution\] |
 | *MAY* | **URL of security.txt** | Software/Classes/Package.externalRef (externalRefType=securityOther) | bom.components\[\].externalReferences\[type=rfc-9116\].url |
 
-## 
 
-## 6.6 OpenChain Telco SBOM Guide Version 1.1 {#6.6-openchain-telco-sbom-guide-version-1.1}
+## 6.6 OpenChain Telco SBOM Guide Version 1.1
 
-### 6.6.1 Required Elements {#6.6.1-required-elements}
+### 6.6.1 Required Elements
 
 The Telco SBOM Guide is primarily based on SPDX v2.2. SPDX v3.0 and CycloneDX equivalents are shown for reference only; they are not formally mandated by the Telco guide. Elements with no direct CycloneDX counterpart are marked with a dash (—).
 
-#### 6.6.1.1 Document Creation Information {#6.6.1.1-document-creation-information}
+#### 6.6.1.1 Document Creation Information
 
 | Req. | Element Name | SPDX v2.2+ | SPDX v3.0 | CycloneDX v1.7 |
 | ----- | :---- | :---- | :---- | :---- |
@@ -165,7 +160,7 @@ The Telco SBOM Guide is primarily based on SPDX v2.2. SPDX v3.0 and CycloneDX eq
 | **SHALL** | **Created** | (6.9)Created | Core/CreationInfo.created | metadata.timestamp |
 | **SHALL** | **CreatorComment (SBOM Build Information)** | (6.10)CreatorComment | Core/CreationInfo.comment | metadata.lifecycles |
 
-#### 6.6.1.2 Package Information {#6.6.1.2-package-information}
+#### 6.6.1.2 Package Information
 
 | Req. | Element Name | SPDX v2.2+ | SPDX v3.0 | CycloneDX v1.7 |
 | ----- | :---- | :---- | :---- | :---- |

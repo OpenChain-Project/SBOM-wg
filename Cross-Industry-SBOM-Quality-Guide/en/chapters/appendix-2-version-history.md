@@ -1,3 +1,3 @@
-## Appendix.2 Version History {#appendix.2-version-history}
+## Appendix.2 Version History
 
 2026/04/03 version: 2026.04.03 Release

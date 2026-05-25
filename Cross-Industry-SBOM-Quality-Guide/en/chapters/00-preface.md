@@ -1,4 +1,4 @@
-# 0\. Preface {#0.-preface}
+# 0. Preface
 
 The ”OpenChain SBOM Document Quality Guide” is a format-independent framework focused on the quality of the information contained within the document, such as its accuracy and integrity. It defines the essential quality requirements for achieving robust security assurance and license compliance, providing actionable steps to ensure the reliability of the content.  
 Key considerations and differences when adapting the Telco SBOM Guide to develop this guide:

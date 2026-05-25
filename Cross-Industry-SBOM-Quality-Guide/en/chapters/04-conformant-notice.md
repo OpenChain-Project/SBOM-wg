@@ -1,4 +1,4 @@
-# 4\. Conformant Notice {#4.-conformant-notice}
+# 4. Conformant Notice
 
 You MAY use the following statement to indicate that the software components you distribute are accompanied by SBOM Document conforming to the OpenChain SBOM Document Quality Guide: 
 

@@ -12,6 +12,6 @@ In this folder you will find a copy of the brainstorm document.
 You can track the discussion via the OpenChain SBOM Study Group mailing list:
 https://lists.openchainproject.org/g/sbom
 
-Illustration files referenced by `Cross-Industry-SBOM-Quality-Guide.md` are stored under `assets/images/sbom-document-quality-guide/` so that text changes and binary asset changes can be reviewed separately in GitHub.
+Illustration files referenced by the guide are stored under `assets/images/sbom-document-quality-guide/` so that text changes and binary asset changes can be reviewed separately in GitHub. The current PNG assets are kept in this shared assets directory and have been flattened to a white background and enlarged for readability in GitHub light and dark modes; SVG source assets can be introduced later if an SVG-based publishing workflow is adopted.
 
 The guide entry point is `Cross-Industry-SBOM-Quality-Guide.md`. The body of the guide is split by chapter under `chapters/` to make review and maintenance easier.
