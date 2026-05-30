@@ -61,17 +61,14 @@ This table consolidates all element requirements from the four standards covered
 | **SHALL** | **Supplier Name** | (7.5)PackageSupplier | Core/Classes/Artifact.suppliedBy | bom.metadata.supplier bom.components\[\].supplier |
 | **SHALL** | **Component Name** | (7.1)PackageName | Software/Classes/Package.name | bom.components\[\].name |
 | **SHALL** | **Version of the Component** | (7.3)PackageVersion | Software/Classes/Package.packageVersion | bom.components\[\].version |
-| **SHALL** | **Other Unique Identifiers** | (7.2)Package SPDX Identifier
-(6.5)SPDX Document Namespace
-(7.21)ExternalRef: PURL/CPE | Software/Classes/SoftwareArtifact.contentIdentifier Software/Classes/Package.packageUrl Core/Classes/Element.externalIdentifier | bom.components\[\].cpe, .purl, .swid |
+| **SHALL** | **Other Unique Identifiers** | (7.2)Package SPDX Identifier<br>(6.5)SPDX Document Namespace<br>(7.21)ExternalRef: PURL/CPE | Software/Classes/SoftwareArtifact.contentIdentifier Software/Classes/Package.packageUrl Core/Classes/Element.externalIdentifier | bom.components\[\].cpe, .purl, .swid |
 | **SHALL** | **Dependency Relationship** | (11.1)Relationship: CONTAINS, DESCRIBES Document must DESCRIBE ≥ 1 package | Core/Classes/Relationship | bom.dependencies\[\] |
 | **SHALL** | **Author of SBOM Data** | (6.8)Creator | Core/Classes/CreationInfo.createdBy | bom.metadata.author |
 | **SHALL** | **Timestamp** | (6.9)Created | Core/Classes/CreationInfo.created | bom.metadata.timestamp |
 | ***SHOULD*** | **Hash of the Component** | (7.10)PackageChecksum | Core/Classes/Element.verifiedUsing | bom.components\[\].hashes\[\] |
 | ***SHOULD*** | **Lifecycle Phase** | N/A → (6.10)CreatorComment (workaround) | Software/Sbom/sbomType | bom.metadata.lifecycles\[\] |
 | ***SHOULD*** | **Other Component Relationships** | (11.1)GENERATES, ANCESTOR\_OF, VARIANT\_OF… | Core/Classes/Relationship (various types) | bom.components\[\].pedigree |
-| ***SHOULD*** | **License Information** | (7.13)PackageLicenseConcluded
-(7.15)PackageLicenseDeclared | RelationshipType::hasConcludedLicense RelationshipType::hasDeclaredLicense | bom.components\[\].licenses\[\] |
+| ***SHOULD*** | **License Information** | (7.13)PackageLicenseConcluded<br>(7.15)PackageLicenseDeclared | RelationshipType::hasConcludedLicense RelationshipType::hasDeclaredLicense | bom.components\[\].licenses\[\] |
 
 
 ## 6.4 CISA - 2025 Minimum Elements for a Software Bill of Materials (SBOM)
@@ -84,12 +81,9 @@ This table consolidates all element requirements from the four standards covered
 | **SHALL** | **Software Producer** | (7.5)PackageSupplier | Core/Classes/Artifact.suppliedBy | bom.components\[\].supplier |
 | **SHALL** | **Component Name** | (7.1)PackageName | Software/Classes/Package.name | bom.components\[\].name |
 | **SHALL** | **Component Version** | (7.3)PackageVersion | Software/Classes/Package.packageVersion | bom.components\[\].version |
-| **SHALL** | **Software Identifiers** | (7.2)Package SPDX Identifier
-(6.5)SPDX Document Namespace
-(7.21)ExternalRef: PURL/CPE | Software/Classes/SoftwareArtifact.contentIdentifier | bom.components\[\].cpe, .purl, .swid |
+| **SHALL** | **Software Identifiers** | (7.2)Package SPDX Identifier<br>(6.5)SPDX Document Namespace<br>(7.21)ExternalRef: PURL/CPE | Software/Classes/SoftwareArtifact.contentIdentifier | bom.components\[\].cpe, .purl, .swid |
 | **SHALL** | **Component Hash** | (7.10)PackageChecksum | Core/Classes/Element.verifiedUsing | bom.components\[\].hashes\[\] |
-| **SHALL** | **License** | (7.13)PackageLicenseConcluded
-(7.15)PackageLicenseDeclared | RelationshipType::hasConcludedLicense RelationshipType::hasDeclaredLicense | bom.components\[\].licenses\[\] |
+| **SHALL** | **License** | (7.13)PackageLicenseConcluded<br>(7.15)PackageLicenseDeclared | RelationshipType::hasConcludedLicense RelationshipType::hasDeclaredLicense | bom.components\[\].licenses\[\] |
 | **SHALL** | **Dependency Relationship** | (11.1) Relationship: CONTAINS, DESCRIBES Document must DESCRIBE ≥ 1 package | Core/Classes/Relationship | bom.dependencies\[\] |
 | **SHALL** | **Tool Name** | (6.8) Creator: Tool keyword | Core/Tool | bom.metadata.tools |
 | **SHALL** | **Timestamp** | (6.9) Created | Core/Classes/CreationInfo.created | bom.metadata.timestamp |

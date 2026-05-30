@@ -44,7 +44,7 @@ Software Package information
   * Package Version  
   * Details regarding the package identifiers, such as the [SoftWare Hash IDentifiers (SWHID)](https://www.swhid.org/), the [Package-URL (PURL)](https://github.com/package-url/purl-spec), [CPE name](https://nvd.nist.gov/products/cpe), [gitoid](https://www.iana.org/assignments/uri-schemes/prov/gitoid) or the URL of the package distribution site, indicating where the corresponding software package can be obtained.
 
-It is also important for both the supplier and the recipient to agree on which fields are most effective for identifying software packages within the SBOM document.
+  It is also important for both the supplier and the recipient to agree on which fields are most effective for identifying software packages within the SBOM document.
 
 * Package Supplier information  
   This element should contain contact details for the supplier of the package. It is desirable to include a valid email address or a URL to a contact form, ensuring that inquiries about the package can be addressed promptly.  
