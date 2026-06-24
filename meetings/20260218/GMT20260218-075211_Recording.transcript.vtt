@@ -1,0 +1,1478 @@
+WEBVTT
+
+1
+00:07:22.830 --> 00:07:25.640
+Norio Kobota (Sony Group Corporation): Oh, good morning, good afternoon.
+
+2
+00:07:26.030 --> 00:07:27.470
+Norio Kobota (Sony Group Corporation): Thank you for joining.
+
+3
+00:07:28.210 --> 00:07:30.850
+Alin Jerpelea (Sony Group Corporation): Hello, good morning, good afternoon.
+
+4
+00:08:19.700 --> 00:08:20.830
+Norio Kobota (Sony Group Corporation): Okay, excellent.
+
+5
+00:08:20.830 --> 00:08:21.490
+Marcel Kurzmann (Bosch): Hello?
+
+6
+00:08:21.490 --> 00:08:24.230
+Norio Kobota (Sony Group Corporation): Hello! Good afternoon.
+
+7
+00:08:25.340 --> 00:08:31.470
+Norio Kobota (Sony Group Corporation): And I thank you for joining. And oh, there are less people joined yet, but I will…
+
+8
+00:08:31.690 --> 00:08:33.610
+Norio Kobota (Sony Group Corporation): dot the meeting.
+
+9
+00:08:36.770 --> 00:08:39.720
+Norio Kobota (Sony Group Corporation): Can everyone see my screen?
+
+10
+00:08:44.330 --> 00:08:45.090
+Marc-Etienne Vargenau (Nokia Corporation): Yes?
+
+11
+00:08:47.000 --> 00:08:47.540
+Norio Kobota (Sony Group Corporation): Dude.
+
+12
+00:08:48.400 --> 00:08:58.330
+Norio Kobota (Sony Group Corporation): And, I pasted the URL for today's, material, materials, so if you want, please, check it.
+
+13
+00:09:00.960 --> 00:09:01.780
+Norio Kobota (Sony Group Corporation): Okay.
+
+14
+00:09:03.720 --> 00:09:15.019
+Norio Kobota (Sony Group Corporation): So, I will start today's meeting, and thank you for joining. And, today, as I already mentioned in the mail list.
+
+15
+00:09:15.150 --> 00:09:20.320
+Norio Kobota (Sony Group Corporation): I'll be sharing our participation in Hostem 2026.
+
+16
+00:09:20.600 --> 00:09:30.840
+Norio Kobota (Sony Group Corporation): And a related event, like, About Code Workshop in Brazil, the beginning of this month, and the, last day of the last month.
+
+17
+00:09:37.490 --> 00:09:47.409
+Norio Kobota (Sony Group Corporation): And, before we begin, I needed to address the antitrust policy notice. Linux Foundation meetings involve industry competitors.
+
+18
+00:09:47.540 --> 00:09:54.239
+Norio Kobota (Sony Group Corporation): So, all activities must comprise applicable antitrust and competition laws.
+
+19
+00:09:54.510 --> 00:10:01.300
+Norio Kobota (Sony Group Corporation): So, attendees must adhere to meeting agendas and avoid any prohibited activities.
+
+20
+00:10:01.580 --> 00:10:08.990
+Norio Kobota (Sony Group Corporation): And the Linux Foundation Antitrust policy is available at the provided, URL.
+
+21
+00:10:09.360 --> 00:10:16.439
+Norio Kobota (Sony Group Corporation): And if you have any questions, please contact your company counselor or Andrew at the globe.
+
+22
+00:10:19.400 --> 00:10:20.110
+Norio Kobota (Sony Group Corporation): Okay.
+
+23
+00:10:20.530 --> 00:10:35.750
+Norio Kobota (Sony Group Corporation): And, our first major, event was, host license and security compliance tools workshop, aka, About Code of Power, workshop, held at the HostEM 2026 fringe event.
+
+24
+00:10:36.370 --> 00:10:45.920
+Norio Kobota (Sony Group Corporation): And this workshop was designed, the secret design to facilitate dialogue, between tools, developers and users.
+
+25
+00:10:46.270 --> 00:10:59.929
+Norio Kobota (Sony Group Corporation): And by sharing development plans and practical feedback, participants identified synergies to enhance the lifecycle of SBOM creation and utilization.
+
+26
+00:11:00.470 --> 00:11:07.300
+Norio Kobota (Sony Group Corporation): If interested, you can find more details at, about Code Event website.
+
+27
+00:11:07.500 --> 00:11:09.360
+Norio Kobota (Sony Group Corporation): From the link here.
+
+28
+00:11:12.090 --> 00:11:18.120
+Norio Kobota (Sony Group Corporation): So, the About Good workshop consisted, Of three parts.
+
+29
+00:11:18.900 --> 00:11:22.650
+Norio Kobota (Sony Group Corporation): first one, OSS to repeat,
+
+30
+00:11:22.860 --> 00:11:29.320
+Norio Kobota (Sony Group Corporation): A conference on current challenges, and a keynote from prominent developers.
+
+31
+00:11:29.940 --> 00:11:35.089
+Norio Kobota (Sony Group Corporation): And the key message I, like, recognized was, striking.
+
+32
+00:11:35.630 --> 00:11:40.850
+Norio Kobota (Sony Group Corporation): The OSS community has no obligation to fix vulnerabilities.
+
+33
+00:11:40.960 --> 00:11:43.419
+Norio Kobota (Sony Group Corporation): That's always about response, no.
+
+34
+00:11:44.050 --> 00:11:47.759
+Norio Kobota (Sony Group Corporation): And with the Cyber Legitiance Act approaching.
+
+35
+00:11:48.000 --> 00:11:55.060
+Norio Kobota (Sony Group Corporation): Relying on sorry, on the community for security patches is now a waiter risk.
+
+36
+00:11:55.510 --> 00:12:08.220
+Norio Kobota (Sony Group Corporation): We, as corporate employees, must shift from being male users to active contributors who take ownership of vulnerability fixes.
+
+37
+00:12:08.670 --> 00:12:19.900
+Norio Kobota (Sony Group Corporation): So, our priority is improving internal processes and building a development framework that correlates directly with OSS communities.
+
+38
+00:12:20.220 --> 00:12:24.810
+Norio Kobota (Sony Group Corporation): It's, my understanding for this workshop overall.
+
+39
+00:12:27.000 --> 00:12:39.420
+Norio Kobota (Sony Group Corporation): And the next one is Hostem 2026. Our focus is areas where S form on the supply chain, and CRA in practice, and for me, legal and policy development.
+
+40
+00:12:39.870 --> 00:12:44.979
+Norio Kobota (Sony Group Corporation): And not… these, reports are not comprehensive, so please…
+
+41
+00:12:45.100 --> 00:12:48.619
+Norio Kobota (Sony Group Corporation): Jump in to talk anything you want to ask.
+
+42
+00:12:50.270 --> 00:12:51.020
+Norio Kobota (Sony Group Corporation): Okay.
+
+43
+00:12:51.220 --> 00:12:59.040
+Norio Kobota (Sony Group Corporation): Lastly, let me share some practical insights about attending Hostem as a first-time attendees.
+
+44
+00:12:59.460 --> 00:13:06.200
+Norio Kobota (Sony Group Corporation): So, the event takes place at ULV, a massive junior hectare campus.
+
+45
+00:13:06.490 --> 00:13:14.630
+Norio Kobota (Sony Group Corporation): And since there are a few nearby hotels, most attendees commute 30 minutes from the city center.
+
+46
+00:13:15.110 --> 00:13:26.400
+Norio Kobota (Sony Group Corporation): So, we prepared for packed buses and trams. Actually, I missed trams and buses next day, second day.
+
+47
+00:13:26.790 --> 00:13:38.890
+Norio Kobota (Sony Group Corporation): And, buying lunch can be difficult due to crowds, so we highly, I highly recommend, bringing our own food and drinks instead.
+
+48
+00:13:39.950 --> 00:13:47.200
+Norio Kobota (Sony Group Corporation): And the opening keynote had over 1,0500 people.
+
+49
+00:13:47.380 --> 00:13:55.229
+Norio Kobota (Sony Group Corporation): And the community, stands were extremely crowded throughout the event, like the hotels.
+
+50
+00:13:57.890 --> 00:14:03.489
+Norio Kobota (Sony Group Corporation): And this is very impressive for me as a first-time attendee.
+
+51
+00:14:03.750 --> 00:14:08.749
+Norio Kobota (Sony Group Corporation): The heart of Hostem lies in what we call the hallway truck.
+
+52
+00:14:09.270 --> 00:14:17.380
+Norio Kobota (Sony Group Corporation): Why was the opening keynote on digital sovereignty and democracy drew thousands?
+
+53
+00:14:17.580 --> 00:14:21.930
+Norio Kobota (Sony Group Corporation): From over 1,0500 attendees.
+
+54
+00:14:22.120 --> 00:14:26.300
+Norio Kobota (Sony Group Corporation): The real value is happening in the corridors.
+
+55
+00:14:27.350 --> 00:14:36.530
+Norio Kobota (Sony Group Corporation): And this is a massive, autonomous ecosystem with over 1,000 sessions and 100 plus community stands.
+
+56
+00:14:37.460 --> 00:14:42.680
+Norio Kobota (Sony Group Corporation): All operated by volunteers and provided free of charge.
+
+57
+00:14:43.290 --> 00:14:51.699
+Norio Kobota (Sony Group Corporation): And also, they are providing custom Wi-Fi to the privacy focus matrix protocol.
+
+58
+00:14:51.990 --> 00:14:56.510
+Norio Kobota (Sony Group Corporation): And everything is built by the community, all the community.
+
+59
+00:14:57.370 --> 00:15:06.180
+Norio Kobota (Sony Group Corporation): On-site, we can see the students, executives, and families discussing open source as equals.
+
+60
+00:15:06.700 --> 00:15:11.239
+Norio Kobota (Sony Group Corporation): It's very surprising for me, as one Japanese.
+
+61
+00:15:12.390 --> 00:15:18.830
+Norio Kobota (Sony Group Corporation): And it's clear that OSS, open source software, is no longer just a tool.
+
+62
+00:15:19.020 --> 00:15:25.270
+Norio Kobota (Sony Group Corporation): It's an essential social infrastructure nurturing Europa's next generation.
+
+63
+00:15:25.810 --> 00:15:34.429
+Norio Kobota (Sony Group Corporation): And this experience provided me the vital importance of touching the question of the open source community around firsthand.
+
+64
+00:15:35.510 --> 00:15:41.169
+Norio Kobota (Sony Group Corporation): So, this is the most surprising thing for first time attending one Japanese.
+
+65
+00:15:47.490 --> 00:15:50.799
+Norio Kobota (Sony Group Corporation): So, first three, Liga and the Porsche W.
+
+66
+00:15:51.080 --> 00:15:59.210
+Norio Kobota (Sony Group Corporation): It really feels like, 2026, with full CRA enhancement just around the corner.
+
+67
+00:16:00.000 --> 00:16:05.230
+Norio Kobota (Sony Group Corporation): The legal and Portugal balloon was packed, list this year.
+
+68
+00:16:05.730 --> 00:16:14.649
+Norio Kobota (Sony Group Corporation): Despite the difficult legal nature of discussion, the organizers seem to be genuinely enjoying themselves.
+
+69
+00:16:15.510 --> 00:16:27.690
+Norio Kobota (Sony Group Corporation): And I had, I had the opportunity to have a breakfast with, Matiasan from the Free Software Foundation Europe, one of the development organizers.
+
+70
+00:16:27.820 --> 00:16:45.660
+Norio Kobota (Sony Group Corporation): to discuss topics, like the… this is not the topics related to the SBOM, but we are now discussing translation of Ada and Zengman. So, it was a great way to start the day before, diving into the legal session.
+
+71
+00:16:47.760 --> 00:16:55.039
+Norio Kobota (Sony Group Corporation): And from the, legal and policy development, one interesting topic I'd like to share.
+
+72
+00:16:55.600 --> 00:17:03.710
+Norio Kobota (Sony Group Corporation): Los Alan Liu-san presented, from, I forgot, from the Taiwan.
+
+73
+00:17:03.870 --> 00:17:23.830
+Norio Kobota (Sony Group Corporation): presented an analysis of how Taiwan's open source movement evolved from its 1919 salutes into a force for digital democracy through Ji Zhao Bui Gov and the 2014 Sunflower Movement.
+
+74
+00:17:24.589 --> 00:17:39.270
+Norio Kobota (Sony Group Corporation): However, she highlighted that Taiwan now faces a strategic mismatch between its ideas and the hardware economy due to fragmented narratives and across cost
+
+75
+00:17:39.500 --> 00:17:43.010
+Norio Kobota (Sony Group Corporation): Transparency and, subling technology.
+
+76
+00:17:43.430 --> 00:17:48.800
+Norio Kobota (Sony Group Corporation): So, this was a fascinating case study in open source autocracy.
+
+77
+00:17:49.150 --> 00:18:01.699
+Norio Kobota (Sony Group Corporation): So, I believe some of today's attendees involved in the to-do activity, or assessing business, but it's more important, I feel.
+
+78
+00:18:06.980 --> 00:18:20.240
+Norio Kobota (Sony Group Corporation): And, also, we Japanese had a strategic deep dive meeting with, NOishi… from, Muto-san from NOishi, and, Ito-san from Lunetas.
+
+79
+00:18:20.660 --> 00:18:25.080
+Norio Kobota (Sony Group Corporation): And, they are, from Open Chain Japan, communities.
+
+80
+00:18:25.390 --> 00:18:33.240
+Norio Kobota (Sony Group Corporation): And regarding the ECRIPS Foundation's ORC Working Group and the CRA, its CRA impact.
+
+81
+00:18:34.240 --> 00:18:38.569
+Norio Kobota (Sony Group Corporation): And our discussion covered three strategic pillars.
+
+82
+00:18:38.850 --> 00:18:46.490
+Norio Kobota (Sony Group Corporation): And the first one is alignment, defining roles of CRA versus, ECRIPS ORC working group.
+
+83
+00:18:46.960 --> 00:18:53.639
+Norio Kobota (Sony Group Corporation): And the second one is responsibility, analyzing supply chain impact and liability.
+
+84
+00:18:54.640 --> 00:19:01.010
+Norio Kobota (Sony Group Corporation): And the last one is implementation, moving from SBOM theory to practical automation.
+
+85
+00:19:01.710 --> 00:19:07.779
+Norio Kobota (Sony Group Corporation): And the technical focus areas included granularity of dependency tracking.
+
+86
+00:19:07.930 --> 00:19:14.930
+Norio Kobota (Sony Group Corporation): and Evidence Documentation Standard, and the synergy with ORC and OpenChain SBOM working group.
+
+87
+00:19:15.970 --> 00:19:21.720
+Norio Kobota (Sony Group Corporation): So… I'd like to say, one call to action.
+
+88
+00:19:22.250 --> 00:19:36.819
+Norio Kobota (Sony Group Corporation): Community leads and corporate hospitals should lead these cross-industry, cross-community initiatives, and escalate these findings to executives inside our company.
+
+89
+00:19:37.110 --> 00:19:42.049
+Norio Kobota (Sony Group Corporation): And, two drive, four driving, compliance readiness.
+
+90
+00:19:42.190 --> 00:19:44.780
+Norio Kobota (Sony Group Corporation): It's our, my findings.
+
+91
+00:19:48.300 --> 00:19:52.240
+Norio Kobota (Sony Group Corporation): And the next one is, S-bomb Deal.
+
+92
+00:19:52.830 --> 00:19:59.570
+Norio Kobota (Sony Group Corporation): We attended, all-day SBOM session held in, Risabito Auditorium.
+
+93
+00:20:00.520 --> 00:20:08.449
+Norio Kobota (Sony Group Corporation): As expected, and many, people, many friends mentioned me, the venue was very packed.
+
+94
+00:20:09.180 --> 00:20:14.880
+Norio Kobota (Sony Group Corporation): While we could enter easily during early morning hours.
+
+95
+00:20:15.090 --> 00:20:19.260
+Norio Kobota (Sony Group Corporation): But after the, landed at the noon.
+
+96
+00:20:19.530 --> 00:20:27.670
+Norio Kobota (Sony Group Corporation): Once we stepped out, getting back in meant, significant, significant, waiting time.
+
+97
+00:20:28.650 --> 00:20:36.210
+Norio Kobota (Sony Group Corporation): Among participants, I only saw a few acquaintances from Japan.
+
+98
+00:20:36.840 --> 00:20:45.469
+Norio Kobota (Sony Group Corporation): Which made me feel that greater participation from the Asian community, especially from Japan community, would be valuable.
+
+99
+00:20:48.280 --> 00:20:56.570
+Norio Kobota (Sony Group Corporation): And, today, and thank you for joining, the first session was by Anthony Haison-san, whom I finally met in person.
+
+100
+00:20:57.620 --> 00:21:14.219
+Norio Kobota (Sony Group Corporation): And, I'm sorry, due to terrain congestion, I couldn't join in real time. Actually, I joined, SBOM dev room. It's just the last slide of, Ansel Nu-san's presentation.
+
+101
+00:21:14.670 --> 00:21:17.679
+Norio Kobota (Sony Group Corporation): But I watched the recording,
+
+102
+00:21:18.330 --> 00:21:21.660
+Norio Kobota (Sony Group Corporation): after returning, returning to Japan.
+
+103
+00:21:22.380 --> 00:21:30.650
+Norio Kobota (Sony Group Corporation): And, while Builder SBOM? Many communities and many, developers are discussing Build S-bomb.
+
+104
+00:21:30.760 --> 00:21:32.070
+Norio Kobota (Sony Group Corporation): Currently.
+
+105
+00:21:32.490 --> 00:21:37.650
+Norio Kobota (Sony Group Corporation): But his talk highlighted why deployed S forms are so essential.
+
+106
+00:21:38.150 --> 00:21:45.370
+Norio Kobota (Sony Group Corporation): This distinction is crucial for practical S-bombing implementation, I feel.
+
+107
+00:21:46.410 --> 00:21:51.239
+Norio Kobota (Sony Group Corporation): So, up here, Asunisan, do you have any comment?
+
+108
+00:21:55.970 --> 00:21:57.040
+Anthony Harrison (Not Applicable): No, hello?
+
+109
+00:21:57.160 --> 00:21:59.330
+Anthony Harrison (Not Applicable): Just Can you hear me?
+
+110
+00:21:59.550 --> 00:22:00.830
+Norio Kobota (Sony Group Corporation): Yes, can you hear me?
+
+111
+00:22:00.850 --> 00:22:08.530
+Anthony Harrison (Not Applicable): Yeah, okay, no, I think I wanted to highlight the differences of, the different types of SBOM.
+
+112
+00:22:09.170 --> 00:22:10.650
+Anthony Harrison (Not Applicable): And I think…
+
+113
+00:22:12.040 --> 00:22:19.770
+Anthony Harrison (Not Applicable): when we move towards vulnerabilities, we need more information, and that's why I think the deployed SPOM is important.
+
+114
+00:22:20.880 --> 00:22:26.690
+Anthony Harrison (Not Applicable): So, I, you know, I welcome the community to support that and see what they think.
+
+115
+00:22:28.040 --> 00:22:29.349
+Anthony Harrison (Not Applicable): It's part of our journey.
+
+116
+00:22:32.090 --> 00:22:32.770
+Anthony Harrison (Not Applicable): Nope.
+
+117
+00:22:34.310 --> 00:22:38.630
+Anthony Harrison (Not Applicable): So, yeah, I mean, I think… I think there's a lot of… there's still a lot of…
+
+118
+00:22:39.060 --> 00:22:43.289
+Anthony Harrison (Not Applicable): experience still to be found in terms of maturing the SBOM tooling.
+
+119
+00:22:45.110 --> 00:22:48.030
+Anthony Harrison (Not Applicable): I think we're still struggling, to be honest.
+
+120
+00:22:49.770 --> 00:22:53.659
+Anthony Harrison (Not Applicable): I think I just wanted to put something out there to see what people… people thought.
+
+121
+00:23:02.310 --> 00:23:05.199
+Norio Kobota (Sony Group Corporation): Aung Sun, I'm sorry, I can't hear you.
+
+122
+00:23:07.690 --> 00:23:09.040
+Anthony Harrison (Not Applicable): Hello? Can you hear me?
+
+123
+00:23:09.360 --> 00:23:10.370
+Norio Kobota (Sony Group Corporation): Yes.
+
+124
+00:23:10.780 --> 00:23:16.259
+Anthony Harrison (Not Applicable): Yeah, okay, I'm, I'm, I'm on, I'm in the, in the… a big office.
+
+125
+00:23:17.220 --> 00:23:19.000
+Anthony Harrison (Not Applicable): I don't know whether my headphones are working.
+
+126
+00:23:19.470 --> 00:23:20.330
+Anthony Harrison (Not Applicable): No, bro.
+
+127
+00:23:20.720 --> 00:23:28.870
+Anthony Harrison (Not Applicable): But no, please reach out to me and carry on the conversation. I don't really, I think we've got a lot to… a lot to do in the next,
+
+128
+00:23:29.000 --> 00:23:30.009
+Anthony Harrison (Not Applicable): The next year.
+
+129
+00:23:30.140 --> 00:23:31.809
+Anthony Harrison (Not Applicable): So that's really mature the tubing.
+
+130
+00:23:37.740 --> 00:23:38.450
+Anthony Harrison (Not Applicable): Okay.
+
+131
+00:23:39.510 --> 00:23:40.590
+Norio Kobota (Sony Group Corporation): Thank you.
+
+132
+00:23:42.760 --> 00:23:52.030
+Norio Kobota (Sony Group Corporation): Okay, if, someone, does someone, have a question, please, chat, please like in the chat box, or, please ask, later.
+
+133
+00:23:53.060 --> 00:23:55.720
+Norio Kobota (Sony Group Corporation): Okay, I will move on to the next slide.
+
+134
+00:23:57.040 --> 00:24:06.269
+Norio Kobota (Sony Group Corporation): And, this session is provided by Maruta-san, and, this session shared real-world efforts to operationalize,
+
+135
+00:24:06.460 --> 00:24:12.409
+Norio Kobota (Sony Group Corporation): S-bombs generated by Carnell, Yocto, and Sefer.
+
+136
+00:24:13.430 --> 00:24:22.740
+Norio Kobota (Sony Group Corporation): The primary challenge is the format disparity between embedded focused S forms using SPDX or CyconeDX.
+
+137
+00:24:23.230 --> 00:24:26.730
+Norio Kobota (Sony Group Corporation): And information lost during conversion.
+
+138
+00:24:27.720 --> 00:24:40.880
+Norio Kobota (Sony Group Corporation): Missing package names or versions sometimes occur, and it leads to incomplete dependency mapping and inaccurate vulnerability analysis.
+
+139
+00:24:41.780 --> 00:24:56.740
+Norio Kobota (Sony Group Corporation): The speakers recommended prioritizing native SVOM output from tools and cross-checking combative data across multiple scanners to verify integrity.
+
+140
+00:24:57.300 --> 00:25:07.920
+Norio Kobota (Sony Group Corporation): The session emphasized the ongoing need for community-driven interoperability improvement and integrated testing.
+
+141
+00:25:11.170 --> 00:25:17.819
+Norio Kobota (Sony Group Corporation): And the next one is, CRL lady S-bones, provided… I'm sorry, I…
+
+142
+00:25:18.460 --> 00:25:21.209
+Norio Kobota (Sony Group Corporation): From the LEGO HUD team.
+
+143
+00:25:22.140 --> 00:25:32.369
+Norio Kobota (Sony Group Corporation): And, these sessions emphasize the pragmatic 30-minute start approach, over legal idealism or perfection.
+
+144
+00:25:34.230 --> 00:25:40.509
+Norio Kobota (Sony Group Corporation): While it offers a great first step for immediate GRA alignment.
+
+145
+00:25:40.900 --> 00:25:46.740
+Norio Kobota (Sony Group Corporation): But, I have a little bit of concerns about the lack of supply chain consideration.
+
+146
+00:25:48.020 --> 00:26:00.710
+Norio Kobota (Sony Group Corporation): The approach focuses on individual artifacts, potentially overlooking deeper dependency risks, and upstream verification required for true supply chain security.
+
+147
+00:26:01.130 --> 00:26:08.859
+Norio Kobota (Sony Group Corporation): This is an area, we, as the OpenChain S1 Working Group, need to address further.
+
+148
+00:26:13.770 --> 00:26:21.890
+Norio Kobota (Sony Group Corporation): And the next one is, session… Sorry, this session was provided by the LEGO team, and
+
+149
+00:26:22.520 --> 00:26:31.810
+Norio Kobota (Sony Group Corporation): The session had, suggested applying the use of SPDX relationships, such as, descendant of
+
+150
+00:26:32.170 --> 00:26:35.560
+Norio Kobota (Sony Group Corporation): To clarify the origin of the package.
+
+151
+00:26:36.000 --> 00:26:40.620
+Norio Kobota (Sony Group Corporation): And they actually used, toca contenera?
+
+152
+00:26:40.790 --> 00:26:43.770
+Norio Kobota (Sony Group Corporation): And a base container and built images.
+
+153
+00:26:44.150 --> 00:26:49.359
+Norio Kobota (Sony Group Corporation): And define career boundaries of, its responsibility.
+
+154
+00:26:50.510 --> 00:27:02.019
+Norio Kobota (Sony Group Corporation): It was, very interesting for me to hear this, as it is a topic discussed in the actual, our SVOM Document Quality Guide.
+
+155
+00:27:02.160 --> 00:27:08.380
+Norio Kobota (Sony Group Corporation): When considering the entire software supply chain between different parties.
+
+156
+00:27:09.240 --> 00:27:18.530
+Norio Kobota (Sony Group Corporation): So, I, asked some… several questions after this, session to, Alexa from, My thought.
+
+157
+00:27:18.720 --> 00:27:21.900
+Norio Kobota (Sony Group Corporation): And, continue to discuss on the lengthy.
+
+158
+00:27:23.150 --> 00:27:23.940
+Norio Kobota (Sony Group Corporation): Okay.
+
+159
+00:27:25.250 --> 00:27:30.219
+Norio Kobota (Sony Group Corporation): And the next one is, Conforma.
+
+160
+00:27:30.710 --> 00:27:42.320
+Norio Kobota (Sony Group Corporation): This session will focus on conforming a policy engine that automatically validates SMS and attestation generated in the software supply chain.
+
+161
+00:27:43.120 --> 00:27:53.309
+Norio Kobota (Sony Group Corporation): And it provides pass-fail judgment in pipelines, software pipeline pipelines, along with human LEW violation details.
+
+162
+00:27:53.930 --> 00:28:05.210
+Norio Kobota (Sony Group Corporation): And the presentation included both the mechanism and a live demonstration. It is, great, great things for…
+
+163
+00:28:06.500 --> 00:28:11.490
+Norio Kobota (Sony Group Corporation): And when I shared this with the Japanese community.
+
+164
+00:28:11.600 --> 00:28:17.020
+Norio Kobota (Sony Group Corporation): we… I learned about a similar tool called OPA,
+
+165
+00:28:17.320 --> 00:28:31.839
+Norio Kobota (Sony Group Corporation): which is being utilized in, AGL Assessment Automation, AAA. So, if you have, any, questions, you can ask, AAA people.
+
+166
+00:28:32.130 --> 00:28:35.809
+Norio Kobota (Sony Group Corporation): For Japanese, it's niju-san knows well.
+
+167
+00:28:36.930 --> 00:28:42.760
+Norio Kobota (Sony Group Corporation): So, I will check both, Conforma and, OPN now.
+
+168
+00:28:46.560 --> 00:28:56.940
+Norio Kobota (Sony Group Corporation): And, this session introduced Kernel S-bomb, generating, using SPDX budget on 3.0.1.
+
+169
+00:28:58.200 --> 00:29:14.520
+Norio Kobota (Sony Group Corporation): From our knowledge, Yocto and Kernel are the currently among the most accurate tools for representing, producing SPDX version 3.0.1.
+
+170
+00:29:15.430 --> 00:29:21.370
+Norio Kobota (Sony Group Corporation): However, I observed some challenges regarding true interoperability.
+
+171
+00:29:21.730 --> 00:29:25.729
+Norio Kobota (Sony Group Corporation): And, I asked that question, in… during this session.
+
+172
+00:29:26.190 --> 00:29:31.790
+Norio Kobota (Sony Group Corporation): And for instance, build options are documented in the comment field.
+
+173
+00:29:32.410 --> 00:29:44.250
+Norio Kobota (Sony Group Corporation): Which could lead to information loss during format conversations between different tools or different formats, such as SPDX2, Cycle DX, and so on.
+
+174
+00:29:45.340 --> 00:29:53.259
+Norio Kobota (Sony Group Corporation): This is also an area that needs further definement or further discussion, or…
+
+175
+00:29:56.380 --> 00:30:05.429
+Norio Kobota (Sony Group Corporation): And one more thing. After returning to Japan, I was introduced to this session, and I watched the recording.
+
+176
+00:30:05.880 --> 00:30:15.320
+Norio Kobota (Sony Group Corporation): The presenter, using Python, discussed how it's crucial. We are, extremely challenging.
+
+177
+00:30:15.460 --> 00:30:21.069
+Norio Kobota (Sony Group Corporation): To trace dependencies, not just at the package manager level.
+
+178
+00:30:21.550 --> 00:30:27.270
+Norio Kobota (Sony Group Corporation): But all the way down to the she or she prosperous layer.
+
+179
+00:30:28.190 --> 00:30:38.050
+Norio Kobota (Sony Group Corporation): This is, recognized as a major challenge within, especially within, Alpuncheon Japan study group as well.
+
+180
+00:30:38.210 --> 00:30:40.150
+Norio Kobota (Sony Group Corporation): Subgroup as well.
+
+181
+00:30:40.440 --> 00:30:45.870
+Norio Kobota (Sony Group Corporation): So, I'm very curious if authors in the community are here.
+
+182
+00:30:46.000 --> 00:30:48.649
+Norio Kobota (Sony Group Corporation): See, it's the same way or not.
+
+183
+00:30:51.730 --> 00:30:53.049
+Norio Kobota (Sony Group Corporation): And the last one.
+
+184
+00:30:53.440 --> 00:31:03.509
+Norio Kobota (Sony Group Corporation): I was presently surprised to run into Victoria's son and Jonathan from CISA at the About Code workshop.
+
+185
+00:31:04.070 --> 00:31:14.130
+Norio Kobota (Sony Group Corporation): And, we learned that, CISA SBOM, they, provided 2025 August, and so, maybe.
+
+186
+00:31:14.370 --> 00:31:22.419
+Norio Kobota (Sony Group Corporation): And, they, they… Might receive a lot of, comments.
+
+187
+00:31:22.780 --> 00:31:23.900
+Norio Kobota (Sony Group Corporation): public comment.
+
+188
+00:31:24.090 --> 00:31:28.850
+Norio Kobota (Sony Group Corporation): But, we don't see any activities from the CISA.
+
+189
+00:31:29.030 --> 00:31:37.460
+Norio Kobota (Sony Group Corporation): But, I asked them, and they are, they deprived, they are working now hard to respond to public comment.
+
+190
+00:31:37.840 --> 00:31:42.160
+Norio Kobota (Sony Group Corporation): And in April, they want to release a new budget.
+
+191
+00:31:43.120 --> 00:31:48.929
+Norio Kobota (Sony Group Corporation): So, this is an important development for SBOM standardization, I feel.
+
+192
+00:31:50.440 --> 00:31:51.240
+Norio Kobota (Sony Group Corporation): Okay.
+
+193
+00:31:51.520 --> 00:31:54.759
+Norio Kobota (Sony Group Corporation): That's a shorter, summary for me.
+
+194
+00:31:54.980 --> 00:32:03.440
+Norio Kobota (Sony Group Corporation): But, I think there are many people from, who are attending the hostel in Basel.
+
+195
+00:32:03.850 --> 00:32:07.849
+Norio Kobota (Sony Group Corporation): Are there anyone to make a comment or make a talk?
+
+196
+00:32:17.500 --> 00:32:18.970
+Norio Kobota (Sony Group Corporation): Oh, I'm not saying it's not freeze.
+
+197
+00:32:19.590 --> 00:32:21.690
+Marcel Kurzmann (Bosch): Guess, if I may,
+
+198
+00:32:21.830 --> 00:32:38.829
+Marcel Kurzmann (Bosch): Because, I don't know, Kubota-san, you were not there on Wednesday yet, right? Because I can share that in the chat. There was this very, very nice GWeb Summit, the general… no, Global Vulnerability Intelligence Platform Summit.
+
+199
+00:32:38.830 --> 00:32:48.760
+Marcel Kurzmann (Bosch): So, I think it would be worth to have a look into these, activities. It was very, very interesting, because it also shed a light on
+
+200
+00:32:48.850 --> 00:32:53.739
+Marcel Kurzmann (Bosch): So if you look at… some, some slides are already shared there.
+
+201
+00:32:53.770 --> 00:33:07.129
+Marcel Kurzmann (Bosch): also Philip was there, also the CISA guys, the NISA guys were there, and that, was very great, because first of all, it was highlighting, okay, the SBOM is not really helpful at the end.
+
+202
+00:33:07.130 --> 00:33:16.709
+Marcel Kurzmann (Bosch): If we do not have these unique identifiers, right, because we need to enrich them with the metadata for the vulnerabilities, that's point number one.
+
+203
+00:33:16.710 --> 00:33:28.899
+Marcel Kurzmann (Bosch): point number two, and that fits to the last, slide that, that, Kobotassan showed with this, phantom dependencies. That's even worse, because you have those,
+
+204
+00:33:28.900 --> 00:33:32.790
+Marcel Kurzmann (Bosch): Dependencies that have no maintainers.
+
+205
+00:33:32.790 --> 00:33:44.879
+Marcel Kurzmann (Bosch): And, and they showed also in the, in this summit also some, values there from, metrics over the last year, so that there, we…
+
+206
+00:33:44.880 --> 00:33:56.229
+Marcel Kurzmann (Bosch): we're on the good side, right? If we have our SBOM and we detect, okay, cool, all those dependencies, they are maintained, and we have health things, etc, but there was a huge amount, a huge percentage of
+
+207
+00:33:56.430 --> 00:34:06.859
+Marcel Kurzmann (Bosch): of dependencies where there is no maintainer, and that will be a big, big problem, also for all this cybersecurity stuff. So there was no solution
+
+208
+00:34:07.610 --> 00:34:20.879
+Marcel Kurzmann (Bosch): But it highlighted some of the challenges that we have in the future, so that was very interesting. And also, I think what was very, very interesting was this vulnerability exploitability.
+
+209
+00:34:20.880 --> 00:34:34.110
+Marcel Kurzmann (Bosch): thing, so with this, you might have heard about is WEX, right? Vulbability Exploitability Exchange, because on the one side, then once you have this SBOM, also, as Anthony showed, right, so that's cool to have that, and you have this full
+
+210
+00:34:34.110 --> 00:34:39.839
+Marcel Kurzmann (Bosch): overview, then ideally, if this is a runtime, SBOM,
+
+211
+00:34:39.840 --> 00:34:56.400
+Marcel Kurzmann (Bosch): But that, then only your problems start, right? Because then you may, make vulnerability monitoring, then a week later, you get new vulnerabilities, and then you have to judge, okay,
+
+212
+00:34:56.580 --> 00:35:11.409
+Marcel Kurzmann (Bosch): is… are they relevant or not? Are they exploitable in your specific case? Yeah, that's… that's already a challenge. But what… and this is what I learned now from this GWEP summit, and also the Code of Compliance that was on…
+
+213
+00:35:11.560 --> 00:35:22.420
+Marcel Kurzmann (Bosch): on Thursday, so that there is now, not only cybersecurity challenge, but as soon as this,
+
+214
+00:35:22.740 --> 00:35:23.969
+Marcel Kurzmann (Bosch): Thr,
+
+215
+00:35:24.250 --> 00:35:42.599
+Marcel Kurzmann (Bosch): how is it called? This shred, level, yeah, so you have this, vulnerability scores, right, the CVSS, and this was also a big discussion here. As soon as this score is going beyond a certain limit.
+
+216
+00:35:42.600 --> 00:36:02.180
+Marcel Kurzmann (Bosch): then you have to, by law, you have to react, and then you come into a compliance area. And I think Philip, he also highlighted that very well in the workshop. So, so far, in the past, it was not only, okay, you have an intrinsic motivation to get rid of your vulnerabilities, right?
+
+217
+00:36:02.200 --> 00:36:16.369
+Marcel Kurzmann (Bosch): now you also have this additional compliance motivation, okay? The higher, your severity of your vulnerabilities are, then you have to react… you have to react by law, and… and that's…
+
+218
+00:36:16.370 --> 00:36:35.030
+Marcel Kurzmann (Bosch): also brought up the discussion, so, hmm, well, well, then who decides about this, about this score, right? So these were discussions in here, so a lot of things, and that was a very, very good discussion also. And it was good, because it was a really nice series to have
+
+219
+00:36:35.050 --> 00:36:48.040
+Marcel Kurzmann (Bosch): first day, this summit on Wednesday. On Thursday, then there was this code and compliance, so maybe I can also share that, because that was also… may be interesting
+
+220
+00:36:48.150 --> 00:36:51.509
+Marcel Kurzmann (Bosch): For some of you that also
+
+221
+00:36:51.780 --> 00:37:04.579
+Marcel Kurzmann (Bosch): Here it is, Code and Compliance Program, that is, about the supply chain taking also small and medium business into account.
+
+222
+00:37:04.630 --> 00:37:24.269
+Marcel Kurzmann (Bosch): plus the maintainer's perspective, yeah, so that was a very, very good, mix of, maintainers plus industry plus public sector in here. And also here, what Kobotassan already mentioned, that was mainly the ORC working group.
+
+223
+00:37:24.350 --> 00:37:38.199
+Marcel Kurzmann (Bosch): And this is good because the ORC working group now makes kind of a bracket around all things, because Ule Johansson, who is also organizing, who was organizing this,
+
+224
+00:37:38.450 --> 00:38:01.550
+Marcel Kurzmann (Bosch): Global Vulnerability Intelligence Platform Summit. He's also part of this ORC working group, right? So here's where everything comes together, so I was really now pleased to see that, Kupo Jasan, you and your Japanese representatives were also meeting with the ORC Working Group, because I think here I can only second that here we should really join forces
+
+225
+00:38:01.550 --> 00:38:04.059
+Marcel Kurzmann (Bosch): With… with them, plus also the…
+
+226
+00:38:04.060 --> 00:38:10.719
+Marcel Kurzmann (Bosch): The general vulnerability and challenges platform, and the good thing is that Uli Jornsen is from Sweden.
+
+227
+00:38:10.780 --> 00:38:25.669
+Marcel Kurzmann (Bosch): Jimmy was also in this event, who is also from Sweden, so our chair of the board, and then we already talked to Oliver, where I said, okay, hey, couldn't we use also our guides and our ISO
+
+228
+00:38:25.670 --> 00:38:42.819
+Marcel Kurzmann (Bosch): 18974 something to also, lever that into our supply chains, and he said, well, that might be good discussions. And he also synced already with, with Jimmy what we potentially can do in the future also to.
+
+229
+00:38:42.830 --> 00:38:46.030
+Marcel Kurzmann (Bosch): Yeah, to collaborate more on that level.
+
+230
+00:38:47.870 --> 00:38:48.960
+Norio Kobota (Sony Group Corporation): Thank you very much.
+
+231
+00:38:49.830 --> 00:38:50.740
+Norio Kobota (Sony Group Corporation): Okay.
+
+232
+00:38:51.610 --> 00:38:55.600
+Norio Kobota (Sony Group Corporation): Yes. I heard these are, these…
+
+233
+00:38:56.660 --> 00:39:09.790
+Norio Kobota (Sony Group Corporation): events have been held in Brussels, but unfortunately, I can't join from the January 29th, no, 30th.
+
+234
+00:39:10.390 --> 00:39:22.319
+Norio Kobota (Sony Group Corporation): So, next year, I'd like to join, or I will catch up, this, event, with leading these materials.
+
+235
+00:39:22.450 --> 00:39:23.939
+Norio Kobota (Sony Group Corporation): Thank you for sharing.
+
+236
+00:39:25.900 --> 00:39:29.749
+Marcel Kurzmann (Bosch): Yeah, and, and we, we should, then anyway, I, I hope…
+
+237
+00:39:29.840 --> 00:39:41.620
+Marcel Kurzmann (Bosch): Yeah, that's… I was fortunate, because a colleague of mine was hinting into that, and said, okay, I had the chance to come one day earlier, but I think that should not be a problem.
+
+238
+00:39:41.700 --> 00:39:44.750
+Marcel Kurzmann (Bosch): Because I would really love to have Ulinden
+
+239
+00:39:44.750 --> 00:40:06.080
+Marcel Kurzmann (Bosch): Ole Janssen, and also inviting him here, for example, into this round. He already joined the tooling group last time, yeah, to see, because they were searching for tools, and I told him, hey, we have tools. So they also planned to have… to create a list of open source tools, and said, yeah, then we should join forces, because we already
+
+240
+00:40:06.080 --> 00:40:15.069
+Marcel Kurzmann (Bosch): maintain that list, and we can… we're open to extend that. So that's one point. On the other side, I think it would be really a very…
+
+241
+00:40:15.070 --> 00:40:32.009
+Marcel Kurzmann (Bosch): good addition here to our working group also to get this cybersecurity insights from, from his, community here. As Yogesh Mitel from Red Hat, for example, Andrei Lukashenkov there was, then also
+
+242
+00:40:32.220 --> 00:40:46.610
+Marcel Kurzmann (Bosch): giving this, this great, overview of, he made this, this, these metrics, et cetera, et cetera. So, a lot of, interesting perspectives, coming in, and I think it would be really.
+
+243
+00:40:46.610 --> 00:40:54.269
+Marcel Kurzmann (Bosch): And I guess they would also be open to join us and also giving talks in here, and share their insights, yeah.
+
+244
+00:40:55.940 --> 00:41:04.530
+Norio Kobota (Sony Group Corporation): Thank you very much. And, I feel, fortunately, we have many people, who are organizing this kind of events.
+
+245
+00:41:04.540 --> 00:41:17.229
+Norio Kobota (Sony Group Corporation): Like, today I see Nikola-san, and, Yu Master-san, and, Market Jin-san, and, Ari is also one organizer for the About Code workshop.
+
+246
+00:41:17.840 --> 00:41:27.760
+Norio Kobota (Sony Group Corporation): So, we, OpenChain, are very, fortunate, fortunate, I, I'd like to say, we are very lucky.
+
+247
+00:41:27.950 --> 00:41:34.710
+Norio Kobota (Sony Group Corporation): To contact such people, to exchange the information and the insights.
+
+248
+00:41:35.880 --> 00:41:44.830
+Norio Kobota (Sony Group Corporation): Okay, and I'd like to ask Arling, to your insight about the… about Code Workshop on the song.
+
+249
+00:41:49.710 --> 00:42:08.969
+Alin Jerpelea (Sony Group Corporation): Thank you, Kuwat Hassan. I think that the, about Quad workshop showed a lot of, differences between the tool providers and what the both commercial and open source tools are providing from both the compliance and the SBOM output.
+
+250
+00:42:09.150 --> 00:42:12.359
+Alin Jerpelea (Sony Group Corporation): And what people actually need.
+
+251
+00:42:12.750 --> 00:42:25.110
+Alin Jerpelea (Sony Group Corporation): We had, in one of the workshops, around 30 people, which were sharing their experience with tools, and when they have been asked which tools they use.
+
+252
+00:42:25.220 --> 00:42:34.689
+Alin Jerpelea (Sony Group Corporation): None of them was using one tool. All of them were using two or more tools, because the output from one tool was not enough.
+
+253
+00:42:35.050 --> 00:42:40.580
+Alin Jerpelea (Sony Group Corporation): Depending on the project, and then depending on their use case.
+
+254
+00:42:40.680 --> 00:42:58.319
+Alin Jerpelea (Sony Group Corporation): Another thing that I think that is worth mentioning is the fact that everybody complained about the fact that the tools do not provide an output which can be reused by a different tool. And that is, in my opinion, a bit concerning.
+
+255
+00:42:58.420 --> 00:43:01.750
+Alin Jerpelea (Sony Group Corporation): So maybe, we should focus on…
+
+256
+00:43:02.180 --> 00:43:15.959
+Alin Jerpelea (Sony Group Corporation): Talking with the tool providers, and aligning on specific versions, which should be long-term support, like the kernel, like all the major projects that we have.
+
+257
+00:43:16.070 --> 00:43:20.950
+Alin Jerpelea (Sony Group Corporation): And then, for the minor versions, each tool can use whatever.
+
+258
+00:43:21.130 --> 00:43:24.290
+Alin Jerpelea (Sony Group Corporation): That's just something that… Came to my mind.
+
+259
+00:43:27.650 --> 00:43:29.299
+Norio Kobota (Sony Group Corporation): Okay. Thank you, Audi.
+
+260
+00:43:30.700 --> 00:43:39.689
+Norio Kobota (Sony Group Corporation): on the… Oh, thank you. Some more questions on… do you have any insight? Could you provide your insight?
+
+261
+00:43:40.360 --> 00:43:53.450
+Marc-Etienne Vargenau (Nokia Corporation): Yes, one, one information, during FOSDAM, I met with, Augustine Bettino Betancour.
+
+262
+00:43:53.940 --> 00:43:56.220
+Marc-Etienne Vargenau (Nokia Corporation): Hmm, who is a consultant?
+
+263
+00:43:56.550 --> 00:44:11.879
+Marc-Etienne Vargenau (Nokia Corporation): He had worked previously at Scan OSS, but he's now an independent consultant. And, he proposed to make a presentation of the software HashID.
+
+264
+00:44:12.090 --> 00:44:25.170
+Marc-Etienne Vargenau (Nokia Corporation): Software HashID, was developed by the Software Heritage Project, and it's a way to, identify, software components.
+
+265
+00:44:25.200 --> 00:44:42.999
+Marc-Etienne Vargenau (Nokia Corporation): So, he will, present, Software Rashidi in our next, meeting of the telco, workgroup, beginning of, March. It will be, the 5th of March.
+
+266
+00:44:43.230 --> 00:44:47.779
+Marc-Etienne Vargenau (Nokia Corporation): So I will, I will send, an email to…
+
+267
+00:44:48.280 --> 00:44:53.170
+Marc-Etienne Vargenau (Nokia Corporation): To remind you, this, presentation,
+
+268
+00:44:53.710 --> 00:45:00.409
+Marc-Etienne Vargenau (Nokia Corporation): That can be interesting, for both the telco workgroup and the SBOM workgroup.
+
+269
+00:45:01.220 --> 00:45:11.779
+Norio Kobota (Sony Group Corporation): Thank you very much. I will. I must join. But next week, I will go to U.S, so I'm not sure I can join the telephone.
+
+270
+00:45:12.130 --> 00:45:15.279
+Marc-Etienne Vargenau (Nokia Corporation): It's not… it's not the next week, it's the week after.
+
+271
+00:45:15.450 --> 00:45:19.319
+Norio Kobota (Sony Group Corporation): Oh, okay. Oh, that's great. Okay, that sounds nice.
+
+272
+00:45:20.140 --> 00:45:25.910
+Norio Kobota (Sony Group Corporation): Okay, thank you very much. And a new person, could you provide your perspective?
+
+273
+00:45:27.370 --> 00:45:48.380
+Nikola Babadzhanov (Bosch Digital): Yeah, I mean, the perspective… the perspective probably, falls in line with most of whatever was said, here. To me, something that comes to mind is actually two pictures of the four that you're currently showing on the screen. On the screen, one is the same conference session that we had, and just…
+
+274
+00:45:48.380 --> 00:45:50.019
+Nikola Babadzhanov (Bosch Digital): Trying to figure out…
+
+275
+00:45:50.020 --> 00:45:56.609
+Nikola Babadzhanov (Bosch Digital): What people technically use, just in terms of tooling, because for me, the interest… the interest
+
+276
+00:45:56.610 --> 00:46:20.640
+Nikola Babadzhanov (Bosch Digital): for this workshops, especially for the workshop, was not just, the tools, but what people use, different, views, or different use cases for the different tools, and generally, the whole idea behind their supply chain. But, we had an interesting, fallback discussion after this with a few of the people from this round.
+
+277
+00:46:20.640 --> 00:46:36.700
+Nikola Babadzhanov (Bosch Digital): And it just surprises me that a lot of people from different companies are not heavily reliant on open source tooling. They might have, like, one or two tools in their supply chain, but they still heavily rely on
+
+278
+00:46:36.700 --> 00:46:38.950
+Nikola Babadzhanov (Bosch Digital): On proprietary tooling.
+
+279
+00:46:39.420 --> 00:46:58.690
+Nikola Babadzhanov (Bosch Digital): The other thing that we have, I had a really, really long discussion with Luid Adolfo, because not just the Ampo tool that he presented at the workshop, but also, he's maintainer of a few other tools that I'm particularly interested in. One of them is the Protobomb.
+
+280
+00:46:58.690 --> 00:47:05.279
+Nikola Babadzhanov (Bosch Digital): So we had this discussion with him for, for possible synergies regarding the SEPIA project, and…
+
+281
+00:47:05.280 --> 00:47:11.080
+Nikola Babadzhanov (Bosch Digital): Some sort of collaboration in terms of… of what we can do to automate,
+
+282
+00:47:11.130 --> 00:47:17.479
+Nikola Babadzhanov (Bosch Digital): and integrate API into, or perhaps some SCA tools as a sort of a POC.
+
+283
+00:47:17.640 --> 00:47:24.650
+Nikola Babadzhanov (Bosch Digital): In a way. And perhaps an interest in… into the upcoming open chain in France, and a possible,
+
+284
+00:47:25.070 --> 00:47:26.779
+Nikola Babadzhanov (Bosch Digital): Participation there, as well.
+
+285
+00:47:27.480 --> 00:47:40.000
+Nikola Babadzhanov (Bosch Digital): So, yeah, that's mostly it in terms of the tooling workshop. Yeah, I spend most of my day, during the SPOM dev room, in the dev room, so a lot of, yeah.
+
+286
+00:47:40.020 --> 00:47:56.740
+Nikola Babadzhanov (Bosch Digital): fallback discussions with different people afterwards. And I think that we also successfully managed as ambassadors to drive a lot of new people to the different working groups that, and activity, not just people, but… but contribution as well.
+
+287
+00:47:56.980 --> 00:48:00.929
+Nikola Babadzhanov (Bosch Digital): So, I think that's the input, I think, on my end.
+
+288
+00:48:03.440 --> 00:48:05.710
+Norio Kobota (Sony Group Corporation): Yeah, thank you very much.
+
+289
+00:48:06.510 --> 00:48:07.580
+Norio Kobota (Sony Group Corporation): Yes. -Oh.
+
+290
+00:48:08.140 --> 00:48:18.599
+Norio Kobota (Sony Group Corporation): I'm, I communicate with, about, Protobomb, and, I will continue to discuss about, protobomb.
+
+291
+00:48:18.800 --> 00:48:20.890
+Norio Kobota (Sony Group Corporation): development also.
+
+292
+00:48:24.100 --> 00:48:28.070
+Norio Kobota (Sony Group Corporation): And, ice.
+
+293
+00:48:29.270 --> 00:48:31.950
+Norio Kobota (Sony Group Corporation): Itosan, do you have any insight?
+
+294
+00:48:32.290 --> 00:48:33.490
+Norio Kobota (Sony Group Corporation): can provide it.
+
+295
+00:48:35.880 --> 00:48:36.580
+Yoshiyuki Ito (Renesas Electronics Corporation): Whoa.
+
+296
+00:48:39.110 --> 00:48:40.190
+Yoshiyuki Ito (Renesas Electronics Corporation): -Oh.
+
+297
+00:48:40.190 --> 00:48:41.149
+Norio Kobota (Sony Group Corporation): I can't hear you.
+
+298
+00:48:42.250 --> 00:48:43.819
+Yoshiyuki Ito (Renesas Electronics Corporation): Can you hear me?
+
+299
+00:48:44.340 --> 00:48:45.870
+Norio Kobota (Sony Group Corporation): Yes, I can hear you.
+
+300
+00:48:45.870 --> 00:48:46.550
+Yoshiyuki Ito (Renesas Electronics Corporation): Earlier.
+
+301
+00:48:46.980 --> 00:48:49.060
+Yoshiyuki Ito (Renesas Electronics Corporation): Thank you so much.
+
+302
+00:48:49.300 --> 00:48:50.180
+Yoshiyuki Ito (Renesas Electronics Corporation): this…
+
+303
+00:48:50.280 --> 00:49:01.700
+Yoshiyuki Ito (Renesas Electronics Corporation): I attended the, two years ago on the, several, years, in, this, 5 years, 7 years.
+
+304
+00:49:01.920 --> 00:49:08.180
+Yoshiyuki Ito (Renesas Electronics Corporation): And the… I've… So, that the… Many, they bloom.
+
+305
+00:49:08.280 --> 00:49:14.679
+Yoshiyuki Ito (Renesas Electronics Corporation): on the… For today, mentioned in… mentioned about the CLA and the S1.
+
+306
+00:49:14.970 --> 00:49:21.350
+Yoshiyuki Ito (Renesas Electronics Corporation): However, two years ago, It's from this cushion of…
+
+307
+00:49:21.700 --> 00:49:27.240
+Yoshiyuki Ito (Renesas Electronics Corporation): held just one dead room, as I… Remember, and
+
+308
+00:49:27.600 --> 00:49:37.149
+Yoshiyuki Ito (Renesas Electronics Corporation): In that time, the rare, case study sessions and, best, best practice, sessions,
+
+309
+00:49:37.850 --> 00:49:46.479
+Yoshiyuki Ito (Renesas Electronics Corporation): And, many discussion, had, mentioned that the future effect of the…
+
+310
+00:49:46.610 --> 00:49:50.439
+Yoshiyuki Ito (Renesas Electronics Corporation): SBOM, how to… how we treat SPOM and,
+
+311
+00:49:51.070 --> 00:50:02.000
+Yoshiyuki Ito (Renesas Electronics Corporation): how we, connect SPOM with the, license compliance and, vulnerability information. But,
+
+312
+00:50:02.170 --> 00:50:08.450
+Yoshiyuki Ito (Renesas Electronics Corporation): VCU's, sessions, many sessions,
+
+313
+00:50:08.920 --> 00:50:12.379
+Yoshiyuki Ito (Renesas Electronics Corporation): Discussing about the, some sort of case study.
+
+314
+00:50:12.940 --> 00:50:20.120
+Yoshiyuki Ito (Renesas Electronics Corporation): so, it's quite, interesting, to, to, to, to…
+
+315
+00:50:20.820 --> 00:50:24.660
+Yoshiyuki Ito (Renesas Electronics Corporation): The point of view from, real business.
+
+316
+00:50:24.890 --> 00:50:27.920
+Yoshiyuki Ito (Renesas Electronics Corporation): engineering, a point.
+
+317
+00:50:28.100 --> 00:50:29.070
+Yoshiyuki Ito (Renesas Electronics Corporation): So cute.
+
+318
+00:50:29.250 --> 00:50:35.870
+Yoshiyuki Ito (Renesas Electronics Corporation): However, relatively, yeah.
+
+319
+00:50:37.720 --> 00:50:49.600
+Yoshiyuki Ito (Renesas Electronics Corporation): So, not so many, future discussions of Islam, should we take, so… Oz.
+
+320
+00:50:49.730 --> 00:50:56.579
+Yoshiyuki Ito (Renesas Electronics Corporation): CLA, executed, and Operated as a…
+
+321
+00:50:56.780 --> 00:51:04.340
+Yoshiyuki Ito (Renesas Electronics Corporation): Normal, normal day of, this thing, after that, I…
+
+322
+00:51:04.530 --> 00:51:08.260
+Yoshiyuki Ito (Renesas Electronics Corporation): Preferred to, expect that the… we…
+
+323
+00:51:08.790 --> 00:51:12.170
+Yoshiyuki Ito (Renesas Electronics Corporation): discussing, again, future of the platform.
+
+324
+00:51:18.750 --> 00:51:19.870
+Norio Kobota (Sony Group Corporation): Thank you, Tosa.
+
+325
+00:51:19.870 --> 00:51:20.560
+Yoshiyuki Ito (Renesas Electronics Corporation): Yeah.
+
+326
+00:51:20.890 --> 00:51:21.400
+Norio Kobota (Sony Group Corporation): Yep.
+
+327
+00:51:22.070 --> 00:51:28.729
+Norio Kobota (Sony Group Corporation): And, I've, are there any questions or comments?
+
+328
+00:51:33.130 --> 00:51:34.040
+Norio Kobota (Sony Group Corporation): Nothing.
+
+329
+00:51:35.470 --> 00:51:38.300
+Norio Kobota (Sony Group Corporation): So… Aye?
+
+330
+00:51:38.640 --> 00:51:43.140
+Norio Kobota (Sony Group Corporation): think, master-song already introduced, but,
+
+331
+00:51:43.260 --> 00:51:50.059
+Norio Kobota (Sony Group Corporation): Next, March, OpenChain Friends event will be, held in…
+
+332
+00:51:50.670 --> 00:51:55.810
+Norio Kobota (Sony Group Corporation): Bear, I'm sorry, I don't know. Bell… huh? Belly? Or…
+
+333
+00:51:55.810 --> 00:51:56.990
+Marcel Kurzmann (Bosch): Or Stuttgart.
+
+334
+00:51:57.330 --> 00:52:06.900
+Norio Kobota (Sony Group Corporation): I'm sorry. So, I highly recommend to attend this event, if you can join.
+
+335
+00:52:07.200 --> 00:52:13.660
+Norio Kobota (Sony Group Corporation): Unfortunately, I don't have any budget to draw them, but Ariane will be there.
+
+336
+00:52:14.010 --> 00:52:20.209
+Norio Kobota (Sony Group Corporation): home, my colleagues, and so, I'm very,
+
+337
+00:52:20.460 --> 00:52:23.140
+Norio Kobota (Sony Group Corporation): He got to join. Next slide.
+
+338
+00:52:23.820 --> 00:52:37.149
+Marcel Kurzmann (Bosch): Yeah, and the first preliminary draft of the program I plan to share this afternoon. So, currently we have only the topic stream abstracts and the keynotes, that are already, confirmed.
+
+339
+00:52:37.350 --> 00:52:51.009
+Marcel Kurzmann (Bosch): And this afternoon, you can also have a look more into the details about what's in there for those things that are already confirmed, and we will incrementally update that over the next weeks.
+
+340
+00:52:51.200 --> 00:53:06.819
+Marcel Kurzmann (Bosch): That's point number one. Point number two is, yeah, we really intentionally plan that as an in-person event, and we also plan to come to Asia, by the way, with the same format, then by autumn.
+
+341
+00:53:07.070 --> 00:53:21.370
+Marcel Kurzmann (Bosch): also Eastern Europe, we try to do, really, get people together, get connects. The downside of that is that, and I… you will see when you see the program, there's a lot of interesting stuff.
+
+342
+00:53:21.390 --> 00:53:37.360
+Marcel Kurzmann (Bosch): And, you might have the fear to miss it, so we also ask the speakers to use the chance also to do an open-chain webinar afterwards, so that we also have the possibility
+
+343
+00:53:37.530 --> 00:53:46.799
+Marcel Kurzmann (Bosch): To share their, talks and, have this recording, having also typically then more time also for Q&As at the end.
+
+344
+00:53:46.960 --> 00:53:59.790
+Marcel Kurzmann (Bosch): And then it's recorded, because here we do not record anything, it's all in person, it's all, yeah, on-site. But there we hope that we have done the best of both worlds, right, that we have here.
+
+345
+00:54:00.020 --> 00:54:15.940
+Marcel Kurzmann (Bosch): possibilities with such kind of events to connect on the other side with the, webinars, and also, possibility to share that after it's online, with… for those who couldn't join, so that you do not,
+
+346
+00:54:16.200 --> 00:54:39.880
+Marcel Kurzmann (Bosch): miss too much at the end, yeah. But you will miss, obviously, you will miss something. But at least then we can, yeah, hop on the shoulders of those giants that present there also with the webinars. I would have already planned that, to be honest, but I'm still waiting for our next journal manager, because that's a lot of work, and try to figure out, but you can also expect, so we'll try
+
+347
+00:54:39.960 --> 00:54:57.619
+Marcel Kurzmann (Bosch): You will see in the program, so it's also worth looking at that, even after the event, where we also try to share in the program, then, the links to the webinars, to the planned webinars, to the recordings, etc, so that you really have a comprehensive overview of all those topics.
+
+348
+00:54:58.670 --> 00:54:59.879
+Norio Kobota (Sony Group Corporation): Thank you very much.
+
+349
+00:54:59.880 --> 00:55:09.509
+Marcel Kurzmann (Bosch): Nikola is one of those, yeah, just as a side hint, all those top extremes are organized by the community, yeah, so… so we have…
+
+350
+00:55:09.620 --> 00:55:26.219
+Marcel Kurzmann (Bosch): representatives in those, you could call it program committees for all of those topic streams. And Nikola, he's, one of the team members in this open source compliance in Auspos, so he could also provide you then more information if you want, you can contact him.
+
+351
+00:55:26.680 --> 00:55:32.679
+Marcel Kurzmann (Bosch): But you will see that anyway, hopefully, later than the… Preliminary, schedule.
+
+352
+00:55:33.000 --> 00:55:33.670
+Norio Kobota (Sony Group Corporation): Okay.
+
+353
+00:55:33.870 --> 00:55:35.179
+Norio Kobota (Sony Group Corporation): Thank you very much.
+
+354
+00:55:36.850 --> 00:55:38.130
+Norio Kobota (Sony Group Corporation): Okay…
+
+355
+00:55:39.850 --> 00:55:52.930
+Norio Kobota (Sony Group Corporation): Okay, thank you very much, all participants, and, thank you for joining from the SPDX project. It's the first time, I, I think. Thank you very much for joining.
+
+356
+00:55:55.550 --> 00:55:56.380
+Norio Kobota (Sony Group Corporation): Okay.
+
+357
+00:55:56.860 --> 00:55:57.720
+Norio Kobota (Sony Group Corporation): Soap.
+
+358
+00:55:58.330 --> 00:56:04.890
+Norio Kobota (Sony Group Corporation): If there are no questions or comments, I will finish this meeting today.
+
+359
+00:56:06.760 --> 00:56:08.030
+Norio Kobota (Sony Group Corporation): Are there any comments?
+
+360
+00:56:13.670 --> 00:56:22.429
+Marcel Kurzmann (Bosch): Yeah, thank you, Kubota-san. It was great. I think you made a great program agenda today, so thank you very much also for all those updates. It was really great.
+
+361
+00:56:23.830 --> 00:56:24.809
+Alin Jerpelea (Sony Group Corporation): Thank you very much.
+
+362
+00:56:26.220 --> 00:56:26.860
+Marc-Etienne Vargenau (Nokia Corporation): Thank you!
+
+363
+00:56:26.860 --> 00:56:29.370
+Norio Kobota (Sony Group Corporation): Thank you very much for joining. Have a good day.
+
+364
+00:56:30.150 --> 00:56:30.520
+Yoshiyuki Ito (Renesas Electronics Corporation): Thank you, John.
+
+365
+00:56:30.520 --> 00:56:32.010
+Nikola Babadzhanov (Bosch Digital): Thank you, have a good day.
+
+366
+00:56:32.010 --> 00:56:32.540
+Ileana Bratu (NXP): That's…
+
+367
+00:56:32.540 --> 00:56:33.490
+Nobuyuki Tanaka (Sony Group Corporation): Good day.
+
+368
+00:56:34.010 --> 00:56:34.650
+Norio Kobota (Sony Group Corporation): Bye-bye.
+
+369
+00:56:34.650 --> 00:56:35.400
+Nikola Babadzhanov (Bosch Digital): Bye.
+

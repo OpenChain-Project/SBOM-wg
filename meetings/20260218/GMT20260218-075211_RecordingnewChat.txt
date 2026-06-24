@@ -1,0 +1,20 @@
+00:08:49	Norio Kobota (Sony Group Corporation):	https://github.com/OpenChain-Project/SBOM-sg/tree/main/meetings/20260218
+00:24:03	Anthony Harrison (Not Applicable):	Sorry for poor audio….
+00:24:31	Anthony Harrison (Not Applicable):	Please Rach out to me to continue the conversation about the different types of SBOMs
+00:24:41	Anthony Harrison (Not Applicable):	*Reach
+00:29:52	Marcel Kurzmann (Bosch):	"Conforma" looked very similar to the ORT-evaluator. Therefore it would be good to align, to avoid different "Policy-as-code"-Formats to serve different infrastructures. (BTW Fossology also had planned to integrate a Policy engine some time ago)
+00:32:18	Norio Kobota (Sony Group Corporation):	"Sorry for poor aud..." に対して 👍 で対応しました
+00:32:31	Marcel Kurzmann (Bosch):	https://www.gvip-project.org/summit01/agenda/
+00:33:16	Nobuyuki Tanaka (Sony Group Corporation):	"https://www.gvip-p..." に対して 👍 で対応しました
+00:33:19	Norio Kobota (Sony Group Corporation):	"https://www.gvip-p..." に対して 👍 で対応しました
+00:35:06	佐藤信二＠独立研究者:	"https://www.gvip-p..." に対して 👍 で対応しました
+00:35:37	Norio Kobota (Sony Group Corporation):	"Please Rach out to..." に対して ❤️ で対応しました
+00:35:51	Anthony Harrison (Not Applicable):	The EU have released a document called the ‘SBOM Landscape’. I understand that they had a lot of comments as there were many errors. I am expecting (hoping!) that it will be updated to make it more correct.
+00:36:44	Anthony Harrison (Not Applicable):	I will have to drop now. BTW I am working on bring SPDX3 to be tools :-)
+00:36:53	Norio Kobota (Sony Group Corporation):	"I will have to dro..." に対して 👍 で対応しました
+00:37:00	Norio Kobota (Sony Group Corporation):	Thanks!
+00:37:04	Marcel Kurzmann (Bosch):	https://www.eclipse-foundation.events/event/code-compliance-2026/program
+00:37:41	Jari Koivisto (Analog Devices, Inc.):	Can someone post the links shared? I need to drop as well (Education WG call starts now).
+00:38:41	Norio Kobota (Sony Group Corporation):	"Can someone post t..." に対して 👍 で対応しました
+00:43:06	Norio Kobota (Sony Group Corporation):	link to this material for late attendees: https://github.com/OpenChain-Project/SBOM-sg/tree/main/meetings/20260218
+00:51:39	Norio Kobota (Sony Group Corporation):	https://openchainproject.org/news/2025/12/09/openchain-and-friends-2026
