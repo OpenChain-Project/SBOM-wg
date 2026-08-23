@@ -6,14 +6,19 @@ This chapter provides a comprehensive analysis of the compliance elements associ
 
 * SPDX v2.2+  
   [https://spdx.github.io/spdx-spec/v2.3/how-to-use/\#k2-satisfying-ntia-minimum-elements-for-an-sbom-using-spdx](https://spdx.github.io/spdx-spec/v2.3/how-to-use/#k2-satisfying-ntia-minimum-elements-for-an-sbom-using-spdx)  
-* SPDX v3.0  
+* SPDX v3.0 Specification [https://spdx.dev/wp-content/uploads/sites/31/2024/12/SPDX-3.0.1-1.pdf](https://spdx.dev/wp-content/uploads/sites/31/2024/12/SPDX-3.0.1-1.pdf)
+* SPDX v3.0 Compliance Guideline
   [https://github.com/spdx/using/blob/main/docs/comply-with-norms.md\#satisfying-ntia-minimum-elements-for-an-sbom-using-spdx--us-executive-order-14028](https://github.com/spdx/using/blob/main/docs/comply-with-norms.md#satisfying-ntia-minimum-elements-for-an-sbom-using-spdx--us-executive-order-14028)  
-* CycloneDX v1.7  
+* CycloneDX SBOM Guide
   [https://cyclonedx.org/guides/OWASP\_CycloneDX-Authoritative-Guide-to-SBOM-en.pdf](https://cyclonedx.org/guides/OWASP_CycloneDX-Authoritative-Guide-to-SBOM-en.pdf)  
+* Standard ECMA-424, December 2025,  CycloneDX v1.7 Bill of Materials (BOM) specification
+  [https://ecma-international.org/wp-content/uploads/ECMA-424_2nd_edition_december_2025.pdf](https://ecma-international.org/wp-content/uploads/ECMA-424_2nd_edition_december_2025.pdf)
 * NTIA \- The Minimum Elements For a Software Bill of Materials (SBOM)  
   [https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom](https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom)  
-* CISA \- 2025 Minimum Elements for a Software Bill of Materials (SBOM)  
+* CISA \- 2025 Minimum Elements for a Software Bill of Materials (SBOM), V 2.0  
   [https://www.cisa.gov/resources-tools/resources/2025-minimum-elements-software-bill-materials-sbom](https://www.cisa.gov/resources-tools/resources/2025-minimum-elements-software-bill-materials-sbom)  
+* CISA \- 2026 Minimum Elements for a Software Bill of Materials (SBOM) V 2.1
+  [https://www.cisa.gov/sites/default/files/2026-07/2026_cisa_sbom_minimum_elements_508c.pdf](https://www.cisa.gov/sites/default/files/2026-07/2026_cisa_sbom_minimum_elements_508c.pdf)  
 * BSI TR-03183 Cyber Resilience Requirements for  Manufacturers and Products Part 2: Software Bill of Materials (SBOM) Version 2.1.0  
   “8.2 Mapping of the individual data fields”: Cyber Resilience Requirements for Manufacturers and Products \- Part 2: Software Bill of Materials (SBOM) Version 2.1.0  
   [https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/TR-nach-Thema-sortiert/tr03183/TR-03183\_node.html](https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/TR-nach-Thema-sortiert/tr03183/TR-03183_node.html)  
@@ -25,31 +30,30 @@ This chapter provides a comprehensive analysis of the compliance elements associ
 
 This table consolidates all element requirements from the four standards covered in this chapter. It enables implementers to identify which elements satisfy multiple regulations simultaneously and to design a single SBOM that meets all applicable obligations.
 
-| Category | Element | NTIA 2021 | CISA 2025 | BSI TR-03183 | OpenChain Telco Guide | Notes / Points of Attention |
-| :---- | :---- | ----- | ----- | ----- | ----- | :---- |
-| **SBOM Document Metadata** | **SBOM Author / Creator of SBOM** | **SHALL** | **SHALL** | **SHALL** | **SHALL** | Different names across standards: 'Author of SBOM Data' (NTIA), 'SBOM Author' (CISA), 'Creator of the SBOM' (BSI). Contact details (email or URL) should be included where possible. |
-|   | **Timestamp** | **SHALL** | **SHALL** | **SHALL** | **SHALL** |   |
-|   | **Tool Name** | — | **SHALL** | — | **SHALL** | New mandatory field added in CISA 2025; absent from NTIA 2021\. Enables recipients to assess SBOM data quality and reproducibility. Tool version SHOULD also be recorded. |
-|   | **Generation Context / Lifecycle Phase** | ***SHOULD*** | **SHALL** | — | ***SHOULD*** | Upgraded from SHOULD (NTIA 2021\) to SHALL (CISA 2025). Records whether the SBOM was generated before build, during build, or after build. BSI does not address this field explicitly. Build-time SBOMs are considered the most accurate. |
-|   | **Unique ID for SBOM Document** | **SHALL** | **SHALL** | **SHALL** | **SHALL** | BSI names this 'SBOM-URI'. In CycloneDX a BOM-Link (urn:cdx:{serialNumber}/{version}) is used for cross-referencing. Must be globally unique. |
-|   | **License for the SBOM Document** | — | — | — | **SHALL** | Telco guide-specific: SPDX v2 requires the DataLicense field (CC0-1.0). Not addressed by NTIA, CISA, or BSI. |
-| **Software Package Information** | **Software Producer / Supplier Name** | **SHALL** | **SHALL** | **SHALL** | **SHALL** | CISA 2025 renamed 'Supplier Name' (NTIA) to 'Software Producer' to avoid confusion with distributors. BSI additionally requires a URL or email contact address (mandatory, not optional). |
-|   | **Component Creator / Originator** | — | — | **SHALL** | — | BSI-specific field. Distinguishes the entity that wrote the code from the entity that supplies/distributes it. Must include a URL or email address. Not present in NTIA or CISA. |
-|   | **Component Name** | **SHALL** | **SHALL** | **SHALL** | **SHALL** | Naming conventions differ across vulnerability databases (OSV, NVD). Suppliers and recipients should agree on which naming convention to follow (see Section 5.1). |
-|   | **Component Version** | **SHALL** | **SHALL** | **SHALL** | **SHALL** |   |
-|   | **Software Identifiers (PURL / CPE / SWHID)** | **SHALL** | **SHALL** | **SHALL** | ***SHOULD*** | Different names: 'Other Unique Identifiers' (NTIA), 'Software Identifiers' (CISA). PURL is supported by OSV; CPE names are used by NVD. Recording both improves cross-database coverage. Telco recommends PURL specifically. BSI requires CPE, PURL, or SWID. |
-|   | **Component Hash** | ***SHOULD*** | **SHALL** | **SHALL** | ***SHOULD*** | Upgraded from SHOULD (NTIA) to SHALL (CISA 2025). BSI explicitly requires the hash of the deployable artifact (binary); source code hash is a separate optional field. SHA-256 or stronger is recommended. |
-|   | **Filename of the Component** | — | — | **SHALL** | — | BSI-specific. Mandatory for traceability of deployable artifacts. Not addressed by NTIA, CISA, or Telco. |
-|   | **Package Download / Distribution URL** | — | — | **SHALL** | **SHALL** | Required by both BSI and Telco, but not by NTIA or CISA. BSI also separately requires the URI of the deployable form of the component. |
-|   | **Source Code URI** | — | — | **SHALL** | — | BSI-specific. Enables traceability from binary back to source. Particularly important for CRA compliance and Open Source license verification. See also Section 5.3 on source code transparency. |
-|   | **File Type Properties (Executable / Archive / Structured)** | — | — | **SHALL** | — | BSI-specific. Classifies the type of each deployable artifact (executable binary, archive, or structured data such as container/firmware). Required for CRA-aligned artifact traceability. |
-| **License Information** | **Declared License** | ***SHOULD*** | **SHALL** | **SHALL** | **SHALL** | Upgraded from SHOULD (NTIA 2021\) to SHALL (CISA 2025). Use SPDX License Expressions for consistency. For proprietary licenses, include contact information alongside the Proprietary Software indicator. |
-|   | **Concluded License** | ***SHOULD*** | **SHALL** | **SHALL** | **SHALL** | Upgraded from SHOULD (NTIA 2021\) to SHALL (CISA 2025). If the license cannot be determined, mark with 'NOASSERTION' rather than omitting the field. BSI calls this 'Distribution licenses'. |
-|   | **Effective Licence** | — | — | *MAY* | — | BSI-specific optional field. Records the license that effectively applies after considering dual-licensing, dependency relationships, and distribution context. Not addressed by other standards. |
-|   | **Copyright Text** | — | — | — | **SHALL** | Required by Telco guide (and mandatory in SPDX v2 format). Not required by NTIA, CISA, or BSI at the SBOM element level. |
-| **Relationship Information** | **Dependency Relationship** | **SHALL** | **SHALL** | **SHALL** | **SHALL** | All standards require this. NTIA/CISA: document must DESCRIBE at least one package and record CONTAINS relationships. BSI specifically requires 'contains' or 'dependsOn' relationship types. See Section 5.7 for guidance on unified relationship expressions. |
-|   | **Other Component Relationships** | ***SHOULD*** | — | ***SHOULD*** | — | NTIA recommends recording additional relationships such as GENERATES, ANCESTOR\_OF, and VARIANT\_OF. CISA and Telco do not address these. See Section 5.7 for recommended keywords. |
-
+| Category                         | Element                                                      | NTIA 2021    | CISA 2025 | CISA 2026 | BSI TR-03183 | OpenChain Telco Guide | Notes / Points of Attention                                                                                                                                                                                                                                     |
+| -------------------------------- | ------------------------------------------------------------ | ------------ | --------- | --------- | ------------ | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **SBOM Document Metadata**       | **SBOM Author / Creator of SBOM**                            | **SHALL**    | **SHALL** | **SHALL** | **SHALL**    | **SHALL**             | Different names across standards: 'Author of SBOM Data' (NTIA), 'SBOM Author' (CISA), 'Creator of the SBOM' (BSI). Contact details (email or URL) should be included where possible.                                                                            |
+|                                  | **Timestamp**                                                | **SHALL**    | **SHALL** | <br>**SHALL**<br> | **SHALL**    | **SHALL**             |                                                                                                                                                                                                                                                                 |
+|                                  | **Tool Name**                                                | —            | **SHALL** | **SHALL** | —            | **SHALL**             | New mandatory field added in CISA 2025; absent from NTIA 2021\. Enables recipients to assess SBOM data quality and reproducibility. Tool version SHOULD also be recorded.                                                                                       |
+|                                  | **Generation Context / Lifecycle Phase**                     | ***SHOULD*** | **SHALL** | **SHALL** | —            | ***SHOULD***          | Upgraded from SHOULD (NTIA 2021\) to SHALL (CISA 2025). Records whether the SBOM was generated before build, during build, or after build. BSI does not address this field explicitly. Build-time SBOMs are considered the most accurate.                       |
+|                                  | **Unique ID for SBOM Document**                              | **SHALL**    | **SHALL** | **SHALL** | **SHALL**    | **SHALL**             | BSI names this 'SBOM-URI'. In CycloneDX a BOM-Link (urn:cdx:{serialNumber}/{version}) is used for cross-referencing. Must be globally unique.                                                                                                                   |
+|                                  | **License for the SBOM Document**                            | —            | —         | —         | —            | **SHALL**             | Telco guide-specific: SPDX v2 requires the DataLicense field (CC0-1.0). Not addressed by NTIA, CISA, or BSI.                                                                                                                                                    |
+| **Software Package Information** | **Software Producer / Supplier Name**                        | **SHALL**    | **SHALL** | **SHALL** | **SHALL**    | **SHALL**             | CISA 2025 renamed 'Supplier Name' (NTIA) to 'Software Producer' to avoid confusion with distributors. BSI additionally requires a URL or email contact address (mandatory, not optional).                                                                       |
+|                                  | **Component Creator / Originator**                           | —            | —         | —         | **SHALL**    | —                     | BSI-specific field. Distinguishes the entity that wrote the code from the entity that supplies/distributes it. Must include a URL or email address. Not present in NTIA or CISA.                                                                                |
+|                                  | **Component Name**                                           | **SHALL**    | **SHALL** | **SHALL** | **SHALL**    | **SHALL**             | Naming conventions differ across vulnerability databases (OSV, NVD). Suppliers and recipients should agree on which naming convention to follow (see Section 5.1).                                                                                              |
+|                                  | **Component Version**                                        | **SHALL**    | **SHALL** | **SHALL** | **SHALL**    | **SHALL**             |                                                                                                                                                                                                                                                                 |
+|                                  | **Software Identifiers (PURL / CPE / SWHID)**                | **SHALL**    | **SHALL** | **SHALL** | **SHALL**    | ***SHOULD***          | Different names: 'Other Unique Identifiers' (NTIA), 'Software Identifiers' (CISA). PURL is supported by OSV; CPE names are used by NVD. Recording both improves cross-database coverage. Telco recommends PURL specifically. BSI requires CPE, PURL, or SWID.   |
+|                                  | **Component Hash**                                           | ***SHOULD*** | **SHALL** | **SHALL** | **SHALL**    | ***SHOULD***          | Upgraded from SHOULD (NTIA) to SHALL (CISA 2025). BSI explicitly requires the hash of the deployable artifact (binary); source code hash is a separate optional field. SHA-256 or stronger is recommended.                                                      |
+|                                  | **Filename of the Component**                                | —            | —         | —         | **SHALL**    | —                     | BSI-specific. Mandatory for traceability of deployable artifacts. Not addressed by NTIA, CISA, or Telco.                                                                                                                                                        |
+|                                  | **Package Download / Distribution URL**                      | —            | —         | —         | **SHALL**    | **SHALL**             | Required by both BSI and Telco, but not by NTIA or CISA. BSI also separately requires the URI of the deployable form of the component.                                                                                                                          |
+|                                  | **Source Code URI**                                          | —            | —         | —         | **SHALL**    | —                     | BSI-specific. Enables traceability from binary back to source. Particularly important for CRA compliance and Open Source license verification. See also Section 5.3 on source code transparency.                                                                |
+|                                  | **File Type Properties (Executable / Archive / Structured)** | —            | —         | —         | **SHALL**    | —                     | BSI-specific. Classifies the type of each deployable artifact (executable binary, archive, or structured data such as container/firmware). Required for CRA-aligned artifact traceability.                                                                      |
+| **License Information**          | **Declared License**                                         | ***SHOULD*** | **SHALL** | **SHALL** | **SHALL**    | **SHALL**             | Upgraded from SHOULD (NTIA 2021\) to SHALL (CISA 2025). Use SPDX License Expressions for consistency. For proprietary licenses, include contact information alongside the Proprietary Software indicator.                                                       |
+|                                  | **Concluded License**                                        | ***SHOULD*** | **SHALL** | **SHALL** | **SHALL**    | **SHALL**             | Upgraded from SHOULD (NTIA 2021\) to SHALL (CISA 2025). If the license cannot be determined, mark with 'NOASSERTION' rather than omitting the field. BSI calls this 'Distribution licenses'.                                                                    |
+|                                  | **Effective Licence**                                        | —            | —         | —         | *MAY*        | —                     | BSI-specific optional field. Records the license that effectively applies after considering dual-licensing, dependency relationships, and distribution context. Not addressed by other standards.                                                               |
+|                                  | **Copyright Text**                                           | —            | —         | —         | —            | **SHALL**             | Required by Telco guide (and mandatory in SPDX v2 format). Not required by NTIA, CISA, or BSI at the SBOM element level.                                                                                                                                        |
+| **Relationship Information**     | **Dependency Relationship**                                  | **SHALL**    | **SHALL** | **SHALL** | **SHALL**    | **SHALL**             | All standards require this. NTIA/CISA: document must DESCRIBE at least one package and record CONTAINS relationships. BSI specifically requires 'contains' or 'dependsOn' relationship types. See Section 5.7 for guidance on unified relationship expressions. |
+|                                  | **Other Component Relationships**                            | ***SHOULD*** | —         | —         | ***SHOULD*** | —                     | NTIA recommends recording additional relationships such as GENERATES, ANCESTOR\_OF, and VARIANT\_OF. CISA and Telco do not address these. See Section 5.7 for recommended keywords.                                                                             |
 
 
 ## 6.3 NTIA - The Minimum Elements For a Software Bill of Materials (SBOM)
@@ -124,7 +128,7 @@ TR-03182 version 2.1.0 does not allow SPDX v2.
 | **SHALL** | **Hash value of deployable component** | Software/Classes/File.verifiedUsing | components\[\].externalReferences\[\].hashes\[\]  \[type=distribution\] |
 | **SHALL** | **Executable property** | Software/Classes/File.additionalPurpose=\[executable\] | bom.components\[\].properties\[name=bsi:component:executable\] |
 | **SHALL** | **Archive property** | Software/Classes/File.additionalPurpose=\[archive\] | bom.components\[\].properties\[name=bsi:component:archive\] |
-| **SHALL** | **Structured property** | Software/Classes/File.additionalPurpose=\[container|firmware\] | bom.components\[\].properties\[name=bsi:component:structured\] |
+| **SHALL** | **Structured property** | Software/Classes/File.additionalPurpose=\[container\|firmware\] | bom.components\[\].properties\[name=bsi:component:structured\] |
 | **SHALL** | **SBOM-URI** | Software/Classes/Sbom.spdxId | bom.serialNumber (BOM-Link: urn:cdx:{serialNumber}/{version}) |
 | **SHALL** | **Source code URI** | Software/Classes/SoftwareArtifact.externalRef (externalRefType=SourceArtifact) | bom.components\[\].externalReferences\[type=source-distribution\].url |
 | **SHALL** | **URI of deployable form of component** | Software/Classes/File.externalRef (externalRefType=binaryArtifact) \[under discussion\] | bom.components\[\].externalReferences\[type=distribution\].url |
@@ -169,3 +173,51 @@ The Telco SBOM Guide is primarily based on SPDX v2.2. SPDX v3.0 and CycloneDX eq
 | **SHALL** | **Relationship: DESCRIBES \+ CONTAINS** | (11.1) Relationship: CONTAINS, DESCRIBES | Relationship (contains, describes) | components.components dependencies |
 | ***SHOULD*** | **PackageChecksum** | (7.10) PackageChecksum | Software/Package.verifiedUsing | metadata.component.hashes components.hashes |
 | ***SHOULD*** | **ExternalRef: PURL (PackageURL)** | (7.21) ExternalRef: PACKAGE-MANAGER purl | Software/Package/externalIdentifier (packageUrl) | purl |
+
+## 6.7 CISA - 2026 Minimum Elements for a Software Bill of Materials (SBOM)
+
+According to Appendix A, Table 1.
+
+### 6.7.1 Required Elements
+
+| Req. | Element Name | SPDX v2.2+ | SPDX v3.0 | CycloneDX v1.7 |
+| ----- | :---- | :---- | :---- | :---- |
+| **SHALL** | **SBOM Author** | (6.8)Creator | Core/Classes/CreationInfo.createdBy | /metadata/authors |
+| **SHALL** | **SBOM Author Signature** | TBD | TBD | /signature |
+| **SHALL** | **SBOM Data Format Name** | TBD | TBD | /bomFormat |
+| **SHALL** | **SBOM Data Format Version** | TBD | /Core/CreationInfo/specVersion | /specVersion |
+| **SHALL** | **Component Producer** | (7.5)PackageSupplier | Core/Classes/Artifact.suppliedBy | /components/\[\]/supplier |
+| **SHALL** | **Component Name** | (7.1)PackageName | Software/Classes/Package.name | /components/\[\]/name |
+| **SHALL** | **Component Version** | (7.3)PackageVersion | Software/Classes/Package.packageVersion | /components/\[\]/version |
+| **SHALL** | **Component Identifiers** | (7.2)Package SPDX Identifier<br>(6.5)SPDX Document Namespace<br>(7.21)ExternalRef: PURL/CPE | Software/Classes/SoftwareArtifact.contentIdentifier | /components/\[\]/cpe, .purl, .swid |
+| **SHALL** | **Component Hash Algorithm** | TBD | Core/algorithm |  /components/\[\]/hashes/\[\]/alg |
+| **SHALL** | **Component Hash Value** | (7.10)PackageChecksum | Core/Classes/Element.verifiedUsing | /components/\[\].hashes\[\]/content |
+| **SHALL** | **Component License** | (7.13)PackageLicenseConcluded<br>(7.15)PackageLicenseDeclared | RelationshipType::hasConcludedLicense RelationshipType::hasDeclaredLicense | /components/\[\]/licenses |
+| **SHALL** | **Component Dependency Relationship** | (11.1) Relationship: CONTAINS, DESCRIBES Document must DESCRIBE ≥ 1 package | Core/Classes/Relationship | /dependencies/\[\] |
+| **SHALL** | **Tool Name** | (6.8) Creator: Tool keyword | Core/Tool | /metadata/tools |
+| **SHALL** | **Tool Version** | TBD | TBD | /metadata/tools/\[\]/version |
+| **SHALL** | **SBOM Version** | TBD | TBD | /version |
+| **SHALL** | **SBOM Timestamp** | (6.9) Created | Core/Classes/CreationInfo.created | /metadata/timestamp |
+| **SHALL** | **SBOM Generation Context** | (6.9) Created → model-definition | Software/Sbom/sbomType (via model-definition) | /metadata/lifecycles\[\] |
+
+### 6.4.2 Table of Minimum Elements Data Fields
+
+| Data Field | Description |
+| :---- | :---- |
+| **Component Dependency Relationship** | The relationship between two components, where one component is necessary for the operation of the other. |
+| **Component Hash Algorithm**  | The cryptographic algorithm used to compute the Component Hash Value of the software component. |
+| **Component Hash Value** | The output generated from applying a cryptographic hash algorithm to an executable component artifact. |
+| **Component Identifiers** | Identifiers used to identify a component or serve as a look-up key for relevant databases. |
+| **Component License** | The identifiers for the licenses under which the software component is available. |
+| **Component Name** | The name assigned by the component producer to a software component. |
+| **Component Producer** | The name of an entity that creates, defines, and identifies components. |
+| **Component Version** | Identifier used by the component producer to specify a change in a software component from a previously identified version or to indicate that it is the first version. |
+| **SBOM Author** | The name of the entity that creates the SBOM data for the target component. |
+| **SBOM Author Signature** | A digital signature attributable to the SBOM author. |
+| **SBOM Data Format Name** | The name of the data format used to represent the SBOM data. |
+| **SBOM Data Format Version** | Identifier designated by the SBOM data format to specify the version of the data format. |
+| **SBOM Generation Context** | The relative software lifecycle phase and data available at the time the SBOM author generated the SBOM. |
+| **SBOM Timestamp** | Record of the date and time of the most recent update to the SBOM data. |
+| **SBOM Tool Name** | The name of the tool used by the SBOM author to generate or amend the SBOM. |
+| **SBOM Tool Version** | Identifier for the version of the tool identified in the SBOM Tool Name element. | 
+| **SBOM Version** | Identifier designated by the SBOM author to specify a change in the SBOM document from a previously identified version or to indicate that it is the first version. |
