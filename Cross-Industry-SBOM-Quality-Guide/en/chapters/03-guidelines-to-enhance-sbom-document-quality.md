@@ -106,7 +106,7 @@ For other formats, please refer to the respective specifications.
 
 ### 3.3.2 Rationale
 
-As noted in NTIA SBOM Minimum Elements, when SBOM Documents are exchanged across the supply chain, they must be provided in a machine-processable standard format to ensure interoperability among the various tools used by different entities. At the same time, since SBOM Documents may also be reviewed manually (for example, checking license information), it is equally important that the document is available in, or can be easily converted to, a human-readable format.
+As noted in NTIA SBOM Minimum Elements, when SBOM Documents are exchanged across the supply chain, they must be provided in a machine-processable standard format to ensure interoperability among the various tools used by different entities. At the same time, since SBOM Documents may also be reviewed manually (for example, checking license information), it is equally important that the document is available in, or can be easily converted to, a human-readable format. It is expected for both the supplier and the recipient to agree with "expected values".
 
 ## 3.4 Timing of SBOM Document delivery
 
