@@ -100,7 +100,7 @@ An SBOM document SHALL be in a machine-processable format, such as those support
 XML 1.0: [https://www.w3.org/TR/xml/](https://www.w3.org/TR/xml/)  
 JSON-LD 1.1: [https://www.w3.org/TR/json-ld11/](https://www.w3.org/TR/json-ld11/)   
 ECMA-404: The JSON data interchange syntax: [https://ecma-international.org/publications-and-standards/standards/ecma-404/](https://ecma-international.org/publications-and-standards/standards/ecma-404/)   
-YAML™: [https://yaml.org/spec/](https://yaml.org/spec/) 
+YAML: [https://yaml.org/spec/](https://yaml.org/spec/) 
 
 For other formats, please refer to the respective specifications.
 
