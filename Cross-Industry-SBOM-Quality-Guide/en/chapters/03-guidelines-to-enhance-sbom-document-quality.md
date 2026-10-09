@@ -89,7 +89,7 @@ PURL: [https://github.com/package-url/purl-spec](https://github.com/package-url/
 
 ### 3.2.2 Rationale
 
-Clearly defining across the entire supply chain which elements, such as SBOM Document Creation information and Package information details, must be included and distributed helps prevent gaps in the distributed data. Furthermore, clarifying the expected values for each element reduces ambiguous language and inter-tool variations.
+Clearly defining across the entire supply chain which elements, such as SBOM Document Creation information and Package information details, must be included and distributed helps prevent gaps in the distributed data. Furthermore, clarifying the expected values for each element reduces ambiguous language and inter-tool variations. It is expected for both the supplier and the recipient to agree with "expected values".
 
 ## 3.3 File Format
 
