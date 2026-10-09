@@ -110,7 +110,7 @@ As noted in NTIA SBOM Minimum Elements, when SBOM Documents are exchanged across
 
 ## 3.4 Timing of SBOM Document delivery
 
-The SBOM Document SHALL be available no later than at the time of the delivery of the software (in either binary or source form).
+The SBOM Document SHOULD be available no later than at the time of the delivery of the software (in either binary or source form).
 
 ### 3.4.1 Verification and reference material
 
