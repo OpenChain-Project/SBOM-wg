@@ -81,7 +81,7 @@ When the SBOM document is used for legal or regulatory compliance purposes, the 
 ### 3.2.1 Verification and reference material
 
 The Minimum Elements For a Software Bill of Materials(SBOM) : [https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom](https://www.ntia.gov/report/2021/minimum-elements-software-bill-materials-sbom)    
-2025 Minimum Elements for a Software Bill of Materials (SBOM): [https://www.cisa.gov/resources-tools/resources/2025-minimum-elements-software-bill-materials-sbom](https://www.cisa.gov/resources-tools/resources/2025-minimum-elements-software-bill-materials-sbom)   
+2026 Minimum Elements for a Software Bill of Materials (SBOM): [https://www.cisa.gov/resources-tools/resources/2026-minimum-elements-software-bill-materials-sbom](https://www.cisa.gov/resources-tools/resources/2026-minimum-elements-software-bill-materials-sbom)   
 SPDX®: [https://spdx.dev/use/specifications/](https://spdx.dev/use/specifications/)   
 CycloneDX: [https://cyclonedx.org/specification/overview/](https://cyclonedx.org/specification/overview/)   
 SWHID: [https://www.swhid.org/](https://www.swhid.org/)   
